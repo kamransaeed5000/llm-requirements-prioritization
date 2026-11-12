@@ -1,0 +1,1322 @@
+{
+ "GPT-3.5|1": {
+  "stories_generated": [
+   {
+    "id": 1,
+    "story_name": "VendorDataExtraction",
+    "user_story": "As a data analyst, I want to extract pricing information from PDFs, to/so that I can compare vendor offerings."
+   },
+   {
+    "id": 2,
+    "story_name": "VendorDataTranslation",
+    "user_story": "As a data analyst, I want to translate extracted data into a structured format for LLM use, to/so that I can analyze vendor data accurately."
+   },
+   {
+    "id": 3,
+    "story_name": "MongoDBDataStorage",
+    "user_story": "As a data analyst, I want to store vendor data in MongoDB, to/so that I can easily retrieve and compare data from various vendors."
+   },
+   {
+    "id": 4,
+    "story_name": "RealTimeAnalysis",
+    "user_story": "As a procurement manager, I want to enable real-time analysis of vendor data, to/so that I can make informed decisions about supplier selection and pricing."
+   },
+   {
+    "id": 5,
+    "story_name": "SupplierComparison",
+    "user_story": "As a procurement manager, I want to compare pricing information from various suppliers, to/so that I can identify the best vendors for our needs."
+   },
+   {
+    "id": 6,
+    "story_name": "SupplierRecommendation",
+    "user_story": "As a procurement manager, I want to receive recommendations for the best suppliers based on vendor data, to/so that I can streamline our procurement process."
+   },
+   {
+    "id": 7,
+    "story_name": "TotalCostCalculation",
+    "user_story": "As a procurement manager, I want to calculate the total cost of procurement, to/so that I can optimize our costs and make better purchasing decisions."
+   },
+   {
+    "id": 8,
+    "story_name": "IngredientAnalysis",
+    "user_story": "As a recipe developer, I want to analyze ingredient costs and optimize recipes, to/so that I can reduce our expenses and improve product offerings."
+   },
+   {
+    "id": 9,
+    "story_name": "PastaSupplierRateComparison",
+    "user_story": "As a procurement manager, I want to compare supplier rates for pasta, to/so that I can identify the best vendors for our pasta needs."
+   },
+   {
+    "id": 10,
+    "story_name": "RecipeCostCalculation",
+    "user_story": "As a recipe developer, I want to calculate the cost of recipes, to/so that I can ensure that our products are competitively priced and profitable."
+   },
+   {
+    "id": 11,
+    "story_name": "APIDevelopment",
+    "user_story": "As a data analyst, I want to develop APIs for data uploads, to/so that we can easily integrate vendor data into our system."
+   },
+   {
+    "id": 12,
+    "story_name": "EnhancedAnalysis",
+    "user_story": "As a procurement manager, I want to enable enhanced analysis of vendor data, to/so that I can make more informed decisions about supplier selection and pricing."
+   }
+  ],
+  "invest_evaluation": [
+   {
+    "id": 1,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "No issues"
+   },
+   {
+    "id": 2,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "No issues"
+   },
+   {
+    "id": 3,
+    "independent": true,
+    "negotiable": false,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "Depends on MongoDB setup"
+   },
+   {
+    "id": 4,
+    "independent": false,
+    "negotiable": false,
+    "valuable": true,
+    "estimable": true,
+    "small": false,
+    "testable": true,
+    "issues": "Requires integration with other features"
+   },
+   {
+    "id": 5,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "No issues"
+   },
+   {
+    "id": 6,
+    "independent": false,
+    "negotiable": false,
+    "valuable": true,
+    "estimable": true,
+    "small": false,
+    "testable": true,
+    "issues": "Requires machine learning model development"
+   },
+   {
+    "id": 7,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "No issues"
+   },
+   {
+    "id": 8,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "No issues"
+   },
+   {
+    "id": 9,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "No issues"
+   },
+   {
+    "id": 10,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "No issues"
+   },
+   {
+    "id": 11,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "No issues"
+   },
+   {
+    "id": 12,
+    "independent": false,
+    "negotiable": false,
+    "valuable": true,
+    "estimable": true,
+    "small": false,
+    "testable": true,
+    "issues": "Requires integration with other features"
+   }
+  ],
+  "stories": [
+   {
+    "id": 1,
+    "story_name": "VendorDataExtraction",
+    "user_story": "As a data analyst, I want to extract pricing information from PDFs, so that I can compare vendor offerings in a structured format."
+   },
+   {
+    "id": 2,
+    "story_name": "VendorDataTranslation",
+    "user_story": "As a data analyst, I want to translate extracted data into a standardized format for LLM use, so that I can analyze vendor data accurately."
+   },
+   {
+    "id": 3,
+    "story_name": "MongoDBDataStorage",
+    "user_story": "As a data analyst, I want to store vendor data in a MongoDB database, so that I can easily retrieve and compare data from various vendors."
+   },
+   {
+    "id": 4,
+    "story_name": "RealTimeAnalysis",
+    "user_story": "As a procurement manager, I want to enable real-time analysis of vendor data through a user-friendly interface, so that I can make informed decisions about supplier selection and pricing."
+   },
+   {
+    "id": 5,
+    "story_name": "SupplierComparison",
+    "user_story": "As a procurement manager, I want to compare pricing information from various suppliers, so that I can identify the best vendors for our needs."
+   },
+   {
+    "id": 6,
+    "story_name": "SupplierRecommendation",
+    "user_story": "As a procurement manager, I want to receive recommendations for the best suppliers based on vendor data, so that I can streamline our procurement process."
+   },
+   {
+    "id": 7,
+    "story_name": "TotalCostCalculation",
+    "user_story": "As a procurement manager, I want to calculate the total cost of procurement, so that I can optimize our costs and make better purchasing decisions."
+   },
+   {
+    "id": 8,
+    "story_name": "IngredientAnalysis",
+    "user_story": "As a recipe developer, I want to analyze ingredient costs and optimize recipes, so that I can reduce our expenses and improve product offerings."
+   },
+   {
+    "id": 9,
+    "story_name": "PastaSupplierRateComparison",
+    "user_story": "As a procurement manager, I want to compare supplier rates for pasta, so that I can identify the best vendors for our pasta needs."
+   },
+   {
+    "id": 10,
+    "story_name": "RecipeCostCalculation",
+    "user_story": "As a recipe developer, I want to calculate the cost of recipes, so that I can ensure that our products are competitively priced and profitable."
+   },
+   {
+    "id": 11,
+    "story_name": "APIDevelopment",
+    "user_story": "As a data analyst, I want to develop APIs for data uploads, so that we can easily integrate vendor data into our system."
+   },
+   {
+    "id": 12,
+    "story_name": "EnhancedAnalysis",
+    "user_story": "As a procurement manager, I want to enable enhanced analysis of vendor data through a user-friendly interface, so that I can make more informed decisions about supplier selection and pricing."
+   }
+  ],
+  "response_time_s": 16.2,
+  "qa_time_s": 36.18
+ },
+ "GPT-3.5|2": {
+  "stories_generated": [
+   {
+    "id": 1,
+    "story_name": "ExtractDataFromPDFs",
+    "user_story": "As a data analyst, I want the system to extract data from PDFs, to/so that we can collect data from various vendors."
+   },
+   {
+    "id": 2,
+    "story_name": "TranslateAndStructureData",
+    "user_story": "As a data analyst, I want the system to translate and structure the extracted data for LLM use, to/so that we can process the data efficiently."
+   },
+   {
+    "id": 3,
+    "story_name": "StoreDataInMongoDB",
+    "user_story": "As a data analyst, I want the system to store the structured data in MongoDB, to/so that we can query and analyze the data effectively."
+   },
+   {
+    "id": 4,
+    "story_name": "ComparePricingInformation",
+    "user_story": "As a procurement manager, I want the system to identify and compare pricing information from various suppliers, to/so that we can make informed purchasing decisions."
+   },
+   {
+    "id": 5,
+    "story_name": "RecommendBestSuppliers",
+    "user_story": "As a procurement manager, I want the system to recommend the best suppliers based on the data, to/so that we can optimize our procurement process."
+   },
+   {
+    "id": 6,
+    "story_name": "CalculateTotalCostOfProcurement",
+    "user_story": "As a procurement manager, I want the system to calculate the total cost of procurement, to/so that we can accurately budget for our procurement needs."
+   },
+   {
+    "id": 7,
+    "story_name": "ProvideIngredientAndCostAnalysis",
+    "user_story": "As a product developer, I want the system to provide ingredient and cost analysis for lasagna, to/so that we can optimize our recipe and reduce costs."
+   },
+   {
+    "id": 8,
+    "story_name": "CompareSupplierRates",
+    "user_story": "As a procurement manager, I want the system to compare supplier rates for pasta, to/so that we can find the best deals for our suppliers."
+   },
+   {
+    "id": 9,
+    "story_name": "CalculateRecipeCost",
+    "user_story": "As a product developer, I want the system to calculate the recipe cost, to/so that we can accurately price our products."
+   },
+   {
+    "id": 10,
+    "story_name": "DevelopAPIForDataUploads",
+    "user_story": "As a system administrator, I want the system to have an API for data uploads, to/so that we can easily integrate new data sources and enhance our analysis capabilities."
+   },
+   {
+    "id": 11,
+    "story_name": "EnhanceAnalysisCapabilities",
+    "user_story": "As a data analyst, I want the system to have enhanced analysis capabilities, to/so that we can gain deeper insights into our procurement and cost management processes."
+   }
+  ],
+  "invest_evaluation": [
+   {
+    "id": 1,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 2,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 3,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 4,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 5,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 6,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 7,
+    "independent": true,
+    "negotiable": false,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "This story seems too specific and may not be a good fit for the system, considering it's focused on a single recipe (lasagna)."
+   },
+   {
+    "id": 8,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 9,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 10,
+    "independent": false,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": false,
+    "testable": true,
+    "issues": "This story depends on the completion of previous tasks and has a larger scope, which may make it harder to estimate."
+   },
+   {
+    "id": 11,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   }
+  ],
+  "stories": [
+   {
+    "id": 1,
+    "story_name": "Extract Data from PDFs",
+    "user_story": "As a data analyst, I want the system to extract data from PDFs, to/so that we can collect data from various vendors."
+   },
+   {
+    "id": 2,
+    "story_name": "Translate and Structure Data for LLM",
+    "user_story": "As a data analyst, I want the system to translate and structure the extracted data for Large Language Model (LLM) use, to/so that we can process the data efficiently."
+   },
+   {
+    "id": 3,
+    "story_name": "Store Data in MongoDB",
+    "user_story": "As a data analyst, I want the system to store the structured data in MongoDB, to/so that we can query and analyze the data effectively."
+   },
+   {
+    "id": 4,
+    "story_name": "Compare Pricing Information",
+    "user_story": "As a procurement manager, I want the system to identify and compare pricing information from various suppliers, to/so that we can make informed purchasing decisions."
+   },
+   {
+    "id": 5,
+    "story_name": "Recommend Best Suppliers",
+    "user_story": "As a procurement manager, I want the system to recommend the best suppliers based on the data, to/so that we can optimize our procurement process."
+   },
+   {
+    "id": 6,
+    "story_name": "Calculate Total Cost of Procurement",
+    "user_story": "As a procurement manager, I want the system to calculate the total cost of procurement, to/so that we can accurately budget for our procurement needs."
+   },
+   {
+    "id": 7,
+    "story_name": "Provide Ingredient and Cost Analysis for Multiple Recipes",
+    "user_story": "As a product developer, I want the system to provide ingredient and cost analysis for multiple recipes, to/so that we can optimize our recipes and reduce costs."
+   },
+   {
+    "id": 8,
+    "story_name": "Compare Supplier Rates",
+    "user_story": "As a procurement manager, I want the system to compare supplier rates for different products, to/so that we can find the best deals for our suppliers."
+   },
+   {
+    "id": 9,
+    "story_name": "Calculate Recipe Cost",
+    "user_story": "As a product developer, I want the system to calculate the recipe cost, to/so that we can accurately price our products."
+   },
+   {
+    "id": 10,
+    "story_name": "Develop API for Data Uploads",
+    "user_story": "As a system administrator, I want the system to have an API for data uploads, to/so that we can easily integrate new data sources and enhance our analysis capabilities."
+   },
+   {
+    "id": 11,
+    "story_name": "Enhance Analysis Capabilities",
+    "user_story": "As a data analyst, I want the system to have enhanced analysis capabilities, to/so that we can gain deeper insights into our procurement and cost management processes."
+   }
+  ],
+  "response_time_s": 17.97,
+  "qa_time_s": 46.379999999999995
+ },
+ "GPT-3.5|3": {
+  "stories_generated": [
+   {
+    "id": 1,
+    "story_name": "VendorDataExtraction",
+    "user_story": "As a procurement manager, I want to extract pricing information from PDFs, to/so that I can analyze supplier offers in real-time."
+   },
+   {
+    "id": 2,
+    "story_name": "VendorDataTranslation",
+    "user_story": "As a developer, I want to translate extracted data into a format compatible with LLM, to/so that the platform can process and analyze the data effectively."
+   },
+   {
+    "id": 3,
+    "story_name": "VendorDataStructuring",
+    "user_story": "As a developer, I want to structure translated data for efficient storage in MongoDB, to/so that it can be easily retrieved and analyzed."
+   },
+   {
+    "id": 4,
+    "story_name": "VendorComparison",
+    "user_story": "As a procurement manager, I want to compare pricing information from various suppliers, to/so that I can identify the best deals and make informed purchasing decisions."
+   },
+   {
+    "id": 5,
+    "story_name": "SupplierRecommendation",
+    "user_story": "As a procurement manager, I want the platform to recommend the best suppliers based on the analyzed data, to/so that I can optimize procurement processes and reduce costs."
+   },
+   {
+    "id": 6,
+    "story_name": "TotalCostCalculation",
+    "user_story": "As a procurement manager, I want the platform to calculate the total cost of procurement, to/so that I can accurately budget for ingredients and suppliers."
+   },
+   {
+    "id": 7,
+    "story_name": "IngredientAnalysis",
+    "user_story": "As a procurement manager, I want to analyze ingredient costs for specific recipes, to/so that I can optimize ingredient procurement and reduce waste."
+   },
+   {
+    "id": 8,
+    "story_name": "CostAnalysisForLasagna",
+    "user_story": "As a procurement manager, I want to calculate the total cost of lasagna production, to/so that I can identify areas for cost reduction and improvement."
+   },
+   {
+    "id": 9,
+    "story_name": "SupplierRateComparisonForPasta",
+    "user_story": "As a procurement manager, I want to compare supplier rates for pasta, to/so that I can negotiate better prices and improve procurement efficiency."
+   },
+   {
+    "id": 10,
+    "story_name": "RecipeCostCalculation",
+    "user_story": "As a procurement manager, I want the platform to calculate the total cost of recipe production, to/so that I can accurately budget for ingredients and suppliers."
+   },
+   {
+    "id": 11,
+    "story_name": "APIDevelopment",
+    "user_story": "As a developer, I want to develop APIs for data uploads, to/so that suppliers can easily upload their pricing information and the platform can update its analysis in real-time."
+   },
+   {
+    "id": 12,
+    "story_name": "EnhancedAnalysis",
+    "user_story": "As a procurement manager, I want the platform to provide enhanced analysis and insights, to/so that I can make data-driven decisions and improve procurement efficiency."
+   }
+  ],
+  "invest_evaluation": [
+   {
+    "id": 1,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 2,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 3,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 4,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 5,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 6,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 7,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 8,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": false,
+    "testable": true,
+    "issues": "This story is too specific and may not be generalizable to other recipes."
+   },
+   {
+    "id": 9,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 10,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": false,
+    "testable": true,
+    "issues": "This story is too similar to Story 6 and may not add new value."
+   },
+   {
+    "id": 11,
+    "independent": false,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "This story depends on the development of other features and may not be estimable without more context."
+   },
+   {
+    "id": 12,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   }
+  ],
+  "stories": [
+   {
+    "id": 1,
+    "story_name": "VendorDataExtraction",
+    "user_story": "As a procurement manager, I want to extract pricing information from PDFs, to/so that I can analyze supplier offers in real-time, and I want the extraction to be done in a way that minimizes manual effort and maximizes data accuracy."
+   },
+   {
+    "id": 2,
+    "story_name": "VendorDataTranslation",
+    "user_story": "As a developer, I want to translate extracted data into a format compatible with LLM, to/so that the platform can process and analyze the data effectively, and I want the translation to be done in a way that preserves the accuracy and context of the original data."
+   },
+   {
+    "id": 3,
+    "story_name": "VendorDataStructuring",
+    "user_story": "As a developer, I want to structure translated data for efficient storage in MongoDB, to/so that it can be easily retrieved and analyzed, and I want the data to be structured in a way that supports easy querying and filtering."
+   },
+   {
+    "id": 4,
+    "story_name": "VendorComparison",
+    "user_story": "As a procurement manager, I want to compare pricing information from various suppliers, to/so that I can identify the best deals and make informed purchasing decisions, and I want the comparison to be done in a way that takes into account multiple factors such as quality, lead time, and payment terms."
+   },
+   {
+    "id": 5,
+    "story_name": "SupplierRecommendation",
+    "user_story": "As a procurement manager, I want the platform to recommend the best suppliers based on the analyzed data, to/so that I can optimize procurement processes and reduce costs, and I want the recommendations to be based on a weighted algorithm that takes into account multiple factors such as past performance, quality, and reliability."
+   },
+   {
+    "id": 6,
+    "story_name": "TotalCostCalculation",
+    "user_story": "As a procurement manager, I want the platform to calculate the total cost of procurement, to/so that I can accurately budget for ingredients and suppliers, and I want the calculation to be done in a way that takes into account all relevant costs such as ingredient costs, labor costs, and shipping costs."
+   },
+   {
+    "id": 7,
+    "story_name": "IngredientAnalysis",
+    "user_story": "As a procurement manager, I want to analyze ingredient costs for specific recipes, to/so that I can optimize ingredient procurement and reduce waste, and I want the analysis to be done in a way that provides insights into cost drivers and opportunities for cost reduction."
+   },
+   {
+    "id": 8,
+    "story_name": "CostAnalysisForLasagna",
+    "user_story": "As a procurement manager, I want to calculate the total cost of lasagna production, to/so that I can identify areas for cost reduction and improvement, and I want the calculation to be done in a way that takes into account all relevant costs such as ingredient costs, labor costs, and shipping costs, and I want the calculation to be generalizable to other recipes."
+   },
+   {
+    "id": 9,
+    "story_name": "SupplierRateComparisonForPasta",
+    "user_story": "As a procurement manager, I want to compare supplier rates for pasta, to/so that I can negotiate better prices and improve procurement efficiency, and I want the comparison to be done in a way that takes into account multiple factors such as quality, lead time, and payment terms."
+   },
+   {
+    "id": 10,
+    "story_name": "RecipeCostCalculation",
+    "user_story": "As a procurement manager, I want the platform to calculate the total cost of recipe production, to/so that I can accurately budget for ingredients and suppliers, and I want the calculation to be done in a way that takes into account all relevant costs such as ingredient costs, labor costs, and shipping costs, and I want the calculation to be generalizable to other recipes."
+   },
+   {
+    "id": 11,
+    "story_name": "APIDevelopment",
+    "user_story": "As a developer, I want to develop APIs for data uploads, to/so that suppliers can easily upload their pricing information and the platform can update its analysis in real-time, and I want the APIs to be designed in a way that supports secure and reliable data transfer."
+   },
+   {
+    "id": 12,
+    "story_name": "EnhancedAnalysis",
+    "user_story": "As a procurement manager, I want the platform to provide enhanced analysis and insights, to/so that I can make data-driven decisions and improve procurement efficiency, and I want the analysis to be based on a combination of historical data and real-time market trends."
+   }
+  ],
+  "response_time_s": 21.54,
+  "qa_time_s": 60.75
+ },
+ "GPT-4o|1": {
+  "stories_generated": [
+   {
+    "id": 1,
+    "story_name": "As a Procurement Officer, I want to extract data from PDF vendor documents, to save time and reduce errors in data entry.",
+    "user_story": "As a Procurement Officer, I want an automated PDF data extraction system, so that I can focus on analysis and decision-making."
+   },
+   {
+    "id": 2,
+    "story_name": "As a Data Analyst, I want to translate and structure the extracted data, to make it easily understandable and usable.",
+    "user_story": "As a Data Analyst, I want a system that translates and structures data from various vendors, so that I can perform efficient analysis."
+   },
+   {
+    "id": 3,
+    "story_name": "As a Procurement Officer, I want to store the structured data in MongoDB, to ensure scalability and easy accessibility.",
+    "user_story": "As a Procurement Officer, I want a system that stores data in MongoDB, so that I can easily retrieve and analyze it in real-time."
+   },
+   {
+    "id": 4,
+    "story_name": "As a Procurement Officer, I want to compare pricing information from various suppliers, to find the best deals.",
+    "user_story": "As a Procurement Officer, I want a system that automatically compares pricing from various suppliers, so that I can make informed decisions."
+   },
+   {
+    "id": 5,
+    "story_name": "As a Procurement Officer, I want to receive supplier recommendations, to save time and improve decision-making.",
+    "user_story": "As a Procurement Officer, I want a system that recommends the best suppliers based on data analysis, so that I can make quick, informed decisions."
+   },
+   {
+    "id": 6,
+    "story_name": "As a Procurement Officer, I want to calculate the total cost of procurement, to manage budgets effectively.",
+    "user_story": "As a Procurement Officer, I want a system that calculates the total cost of procurement, so that I can manage budgets effectively and make cost-effective decisions."
+   },
+   {
+    "id": 7,
+    "story_name": "As a Food Scientist, I want to analyze ingredients and costs for specific recipes, to optimize recipes for cost-effectiveness.",
+    "user_story": "As a Food Scientist, I want a system that allows me to analyze the cost and ingredients of specific recipes, so that I can optimize recipes for cost-effectiveness."
+   },
+   {
+    "id": 8,
+    "story_name": "As a Developer, I want to develop an API for data uploads, to enable seamless integration with external systems.",
+    "user_story": "As a Developer, I want to create an API for data uploads, so that we can easily integrate with external systems and expand the platform's functionality."
+   },
+   {
+    "id": 9,
+    "story_name": "As an Analyst, I want enhanced analysis features, to make better procurement and cost management decisions.",
+    "user_story": "As an Analyst, I want a system with enhanced analysis features, so that I can make better procurement and cost management decisions based on detailed insights."
+   }
+  ],
+  "invest_evaluation": [
+   {
+    "id": 1,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 2,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 3,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 4,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 5,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 6,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 7,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 8,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 9,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   }
+  ],
+  "stories": [
+   {
+    "id": 1,
+    "story_name": "As a Procurement Officer, I want an automated system to extract data from PDF vendor documents, reducing errors and saving time.",
+    "user_story": "As a Procurement Officer, I want a system that extracts data from PDF vendor documents automatically, reducing errors and saving time."
+   },
+   {
+    "id": 2,
+    "story_name": "As a Data Analyst, I want a system to translate and structure the extracted data, enabling efficient analysis.",
+    "user_story": "As a Data Analyst, I want a system that translates and structures data from various vendors, enabling efficient analysis."
+   },
+   {
+    "id": 3,
+    "story_name": "As a Procurement Officer, I want a system to store structured data in MongoDB, ensuring easy accessibility and scalability.",
+    "user_story": "As a Procurement Officer, I want a system that stores data in MongoDB, ensuring easy accessibility and scalability."
+   },
+   {
+    "id": 4,
+    "story_name": "As a Procurement Officer, I want a system to compare pricing information from various suppliers, aiding in informed decisions.",
+    "user_story": "As a Procurement Officer, I want a system that automatically compares pricing from various suppliers, aiding in informed decisions."
+   },
+   {
+    "id": 5,
+    "story_name": "As a Procurement Officer, I want a system to recommend suppliers, saving time and improving decision-making.",
+    "user_story": "As a Procurement Officer, I want a system that recommends the best suppliers based on data analysis, saving time and improving decision-making."
+   },
+   {
+    "id": 6,
+    "story_name": "As a Procurement Officer, I want a system to calculate the total cost of procurement, aiding in budget management.",
+    "user_story": "As a Procurement Officer, I want a system that calculates the total cost of procurement, aiding in budget management and making cost-effective decisions."
+   },
+   {
+    "id": 7,
+    "story_name": "As a Food Scientist, I want a system to analyze ingredients and costs for specific recipes, optimizing recipes for cost-effectiveness.",
+    "user_story": "As a Food Scientist, I want a system that allows me to analyze the cost and ingredients of specific recipes, optimizing recipes for cost-effectiveness."
+   },
+   {
+    "id": 8,
+    "story_name": "As a Developer, I want to create an API for data uploads, enabling seamless integration with external systems.",
+    "user_story": "As a Developer, I want to develop an API for data uploads, enabling seamless integration with external systems and expanding the platform's functionality."
+   },
+   {
+    "id": 9,
+    "story_name": "As an Analyst, I want enhanced analysis features, aiding in better procurement and cost management decisions.",
+    "user_story": "As an Analyst, I want a system with enhanced analysis features, aiding in better procurement and cost management decisions based on detailed insights."
+   }
+  ],
+  "response_time_s": 41.38,
+  "qa_time_s": 43.35
+ },
+ "GPT-4o|2": {
+  "stories_generated": [
+   {
+    "id": 1,
+    "story_name": "As a data analyst, I want to extract data from PDFs, to enable efficient data management.",
+    "user_story": "As a data analyst, I want to extract data from multiple PDFs, so that I can efficiently manage the data from various vendors."
+   },
+   {
+    "id": 2,
+    "story_name": "As a data translator, I want to translate structured data, to accommodate data from diverse vendors.",
+    "user_story": "As a data translator, I want to translate structured data into a common format, so that data from various vendors can be easily compared and analyzed."
+   },
+   {
+    "id": 3,
+    "story_name": "As a data engineer, I want to store structured data in MongoDB, to provide a scalable data storage solution.",
+    "user_story": "As a data engineer, I want to store structured data in MongoDB, so that the platform can handle a large amount of data from multiple vendors."
+   },
+   {
+    "id": 4,
+    "story_name": "As a data analyst, I want to compare pricing information, to identify the best suppliers for a given product.",
+    "user_story": "As a data analyst, I want to compare pricing information from various suppliers, so that I can identify the best suppliers for a specific product."
+   },
+   {
+    "id": 5,
+    "story_name": "As a recommendation engine, I want to recommend suppliers, to save time in vendor selection.",
+    "user_story": "As a recommendation engine, I want to analyze supplier data and recommend the best suppliers, so that users can save time in vendor selection."
+   },
+   {
+    "id": 6,
+    "story_name": "As a data analyst, I want to calculate the total cost of procurement, to optimize overall spending.",
+    "user_story": "As a data analyst, I want to calculate the total cost of procurement for a given product, so that overall spending can be optimized."
+   },
+   {
+    "id": 7,
+    "story_name": "As a software developer, I want to create a functional demo, to showcase the platform's capabilities.",
+    "user_story": "As a software developer, I want to create a functional demo of the platform, so that stakeholders can see the platform's capabilities in action."
+   },
+   {
+    "id": 8,
+    "story_name": "As a software developer, I want to develop APIs for data uploads, to allow for easy data integration.",
+    "user_story": "As a software developer, I want to develop APIs for data uploads, so that users can easily integrate data into the platform."
+   },
+   {
+    "id": 9,
+    "story_name": "As a data analyst, I want to perform enhanced analysis, to improve procurement and cost management.",
+    "user_story": "As a data analyst, I want to perform enhanced analysis on the data, so that procurement and cost management can be improved."
+   }
+  ],
+  "invest_evaluation": [
+   {
+    "id": 1,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 2,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": false,
+    "testable": true,
+    "issues": "The story might involve a significant amount of work due to the diversity of data structures from various vendors"
+   },
+   {
+    "id": 3,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": false,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 4,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": false,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 5,
+    "independent": false,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": false,
+    "testable": true,
+    "issues": "The dependency on the 'As a data analyst, I want to compare pricing information' and 'As a data analyst, I want to calculate the total cost of procurement' stories might exist"
+   },
+   {
+    "id": 6,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": false,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 7,
+    "independent": false,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 8,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": ""
+   },
+   {
+    "id": 9,
+    "independent": false,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": false,
+    "testable": true,
+    "issues": "The dependency on the 'As a data analyst, I want to perform enhanced analysis' story might exist"
+   }
+  ],
+  "stories": [
+   {
+    "id": 1,
+    "story_name": "As an independent data analyst, I want to extract data from a single PDF, to enable efficient data management for one file.",
+    "user_story": "As an independent data analyst, I want to extract data from one PDF, so that I can efficiently manage the data from a single vendor."
+   },
+   {
+    "id": 2,
+    "story_name": "As a flexible data translator, I want to translate structured data from one vendor, to accommodate data from a specific vendor.",
+    "user_story": "As a flexible data translator, I want to translate structured data from one vendor, so that I can easily compare and analyze data from a specific vendor."
+   },
+   {
+    "id": 3,
+    "story_name": "As a data engineer, I want to store structured data from one vendor in MongoDB, to provide a scalable data storage solution for a single vendor.",
+    "user_story": "As a data engineer, I want to store structured data from one vendor in MongoDB, so that the platform can handle data from one vendor."
+   },
+   {
+    "id": 4,
+    "story_name": "As a data analyst, I want to compare pricing information from one supplier, to identify the best supplier for a specific product and vendor.",
+    "user_story": "As a data analyst, I want to compare pricing information from one supplier, so that I can identify the best supplier for a specific product and vendor."
+   },
+   {
+    "id": 5,
+    "story_name": "As an independent recommendation engine, I want to analyze supplier data from one vendor, to recommend the best suppliers, without relying on other stories.",
+    "user_story": "As an independent recommendation engine, I want to analyze supplier data from one vendor, so that I can recommend the best suppliers, without depending on other stories."
+   },
+   {
+    "id": 6,
+    "story_name": "As a data analyst, I want to calculate the total cost of procurement for a given product and vendor, to optimize spending for one product and vendor.",
+    "user_story": "As a data analyst, I want to calculate the total cost of procurement for a given product and vendor, so that overall spending can be optimized for one product and vendor."
+   },
+   {
+    "id": 7,
+    "story_name": "As a software developer, I want to create a functional demo showcasing the platform's capabilities for one feature.",
+    "user_story": "As a software developer, I want to create a functional demo showcasing the platform's capabilities for one feature, so that stakeholders can see the platform's capabilities in action for one feature."
+   },
+   {
+    "id": 8,
+    "story_name": "As a software developer, I want to develop APIs for data uploads from one vendor, to allow for easy data integration from a single vendor.",
+    "user_story": "As a software developer, I want to develop APIs for data uploads from one vendor, so that users can easily integrate data from one vendor into the platform."
+   },
+   {
+    "id": 9,
+    "story_name": "As a data analyst, I want to perform enhanced analysis on the data from one vendor, to improve procurement and cost management for a single vendor.",
+    "user_story": "As a data analyst, I want to perform enhanced analysis on the data from one vendor, so that procurement and cost management can be improved for a single vendor."
+   }
+  ],
+  "response_time_s": 20.87,
+  "qa_time_s": 47.94
+ },
+ "GPT-4o|3": {
+  "stories_generated": [
+   {
+    "id": 1,
+    "story_name": "As a Procurement Officer, I want to upload vendor data through an API, to streamline data input and reduce manual work.",
+    "user_story": "As a Procurement Officer, I want the ability to easily input and update vendor data through a user-friendly API, so that I can save time and reduce errors in data entry."
+   },
+   {
+    "id": 2,
+    "story_name": "As a Data Analyst, I want to extract data from PDFs and translate them, to make the data accessible for analysis.",
+    "user_story": "As a Data Analyst, I want the platform to automatically extract and translate data from PDFs, so that I can quickly analyze the data and make informed decisions."
+   },
+   {
+    "id": 3,
+    "story_name": "As a Data Analyst, I want to structure data for LLM use, to improve the efficiency of the data analysis process.",
+    "user_story": "As a Data Analyst, I want the platform to automatically structure the data in a way that is optimized for analysis using LLM, so that I can easily analyze the data and identify trends."
+   },
+   {
+    "id": 4,
+    "story_name": "As a Data Analyst, I want to store the structured data in MongoDB, to ensure scalability and fast data retrieval.",
+    "user_story": "As a Data Analyst, I want the platform to store the structured data in MongoDB, so that I can quickly access and analyze large amounts of data, and the system can scale as the amount of data grows."
+   },
+   {
+    "id": 5,
+    "story_name": "As a Data Analyst, I want to compare pricing information from various suppliers, to identify the most cost-effective options.",
+    "user_story": "As a Data Analyst, I want the platform to compare pricing information from multiple suppliers, so that I can easily identify the most cost-effective options and make informed decisions about procurement."
+   },
+   {
+    "id": 6,
+    "story_name": "As a Data Analyst, I want the platform to recommend the best suppliers based on the data, to save time and improve decision-making.",
+    "user_story": "As a Data Analyst, I want the platform to use the data it has collected to recommend the best suppliers based on factors such as price, quality, and delivery time, so that I can quickly identify the best options and make informed decisions."
+   },
+   {
+    "id": 7,
+    "story_name": "As a Data Analyst, I want to calculate the total cost of procurement, to help with budgeting and cost management.",
+    "user_story": "As a Data Analyst, I want the platform to automatically calculate the total cost of procurement based on the data it has collected, so that I can easily see the total cost of a procurement project and make informed decisions about budgeting."
+   },
+   {
+    "id": 8,
+    "story_name": "As a Data Analyst, I want to use the platform for ingredient and cost analysis for specific recipes, to optimize recipes for cost-effectiveness.",
+    "user_story": "As a Data Analyst, I want to use the platform to analyze the cost of specific recipes, such as lasagna, and suggest cost-effective alternatives for ingredients, so that I can optimize recipes for cost-effectiveness."
+   },
+   {
+    "id": 9,
+    "story_name": "As a Data Analyst, I want to use the platform for supplier rate comparison for specific products, to find the best supplier for a given product.",
+    "user_story": "As a Data Analyst, I want to use the platform to compare the rates of different suppliers for a specific product, such as pasta, and find the best supplier based on factors such as price, quality, and delivery time, so that I can make informed decisions about procurement."
+   },
+   {
+    "id": 10,
+    "story_name": "As a Data Analyst, I want to use the platform for recipe cost calculation, to help with budgeting and cost management for recipe development.",
+    "user_story": "As a Data Analyst, I want to use the platform to calculate the cost of specific recipes, such as lasagna, and suggest cost-effective alternatives for ingredients, so that I can easily see the total cost of a recipe and make informed decisions about budgeting and recipe development."
+   }
+  ],
+  "invest_evaluation": [
+   {
+    "id": 1,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 2,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 3,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 4,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 5,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 6,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 7,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 8,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 9,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   },
+   {
+    "id": 10,
+    "independent": true,
+    "negotiable": true,
+    "valuable": true,
+    "estimable": true,
+    "small": true,
+    "testable": true,
+    "issues": "None"
+   }
+  ],
+  "stories": [
+   {
+    "id": 1,
+    "story_name": "As a Procurement Officer, I want to upload vendor data through an API, to streamline data input and reduce manual work.",
+    "user_story": "As an independent user, I can upload vendor data using an API, to reduce manual work and errors, making the process valuable and testable."
+   },
+   {
+    "id": 2,
+    "story_name": "As a Data Analyst, I want to extract data from PDFs and translate them, to make the data accessible for analysis.",
+    "user_story": "As a Data Analyst, I can extract and translate data from PDFs, allowing me to quickly analyze the data and make informed decisions, making the process valuable and testable."
+   },
+   {
+    "id": 3,
+    "story_name": "As a Data Analyst, I want to structure data for LLM use, to improve the efficiency of the data analysis process.",
+    "user_story": "As a Data Analyst, I can structure data in a way that is optimized for analysis using LLM, making the process more efficient and testable."
+   },
+   {
+    "id": 4,
+    "story_name": "As a Data Analyst, I want to store the structured data in MongoDB, to ensure scalability and fast data retrieval.",
+    "user_story": "As a Data Analyst, I can store structured data in MongoDB, allowing for quick access and analysis of large amounts of data, and ensuring the system can scale as the amount of data grows, making the process valuable and testable."
+   },
+   {
+    "id": 5,
+    "story_name": "As a Data Analyst, I want to compare pricing information from various suppliers, to identify the most cost-effective options.",
+    "user_story": "As a Data Analyst, I can compare pricing information from multiple suppliers, helping me identify the most cost-effective options and make informed decisions, making the process valuable and testable."
+   },
+   {
+    "id": 6,
+    "story_name": "As a Data Analyst, I want the platform to recommend the best suppliers based on the data, to save time and improve decision-making.",
+    "user_story": "As a Data Analyst, I can rely on the platform to recommend the best suppliers based on factors such as price, quality, and delivery time, saving time and improving decision-making, making the process valuable and testable."
+   },
+   {
+    "id": 7,
+    "story_name": "As a Data Analyst, I want to calculate the total cost of procurement, to help with budgeting and cost management.",
+    "user_story": "As a Data Analyst, I can automatically calculate the total cost of procurement based on the data collected, helping with budgeting and cost management, making the process valuable and testable."
+   },
+   {
+    "id": 8,
+    "story_name": "As a Data Analyst, I want to use the platform for ingredient and cost analysis for specific recipes, to optimize recipes for cost-effectiveness.",
+    "user_story": "As a Data Analyst, I can use the platform to analyze the cost of specific recipes, suggesting cost-effective alternatives for ingredients, helping optimize recipes for cost-effectiveness, making the process valuable and testable."
+   },
+   {
+    "id": 9,
+    "story_name": "As a Data Analyst, I want to use the platform for supplier rate comparison for specific products, to find the best supplier for a given product.",
+    "user_story": "As a Data Analyst, I can use the platform to compare the rates of different suppliers for a specific product, helping me find the best supplier based on factors such as price, quality, and delivery time, making the process valuable and testable."
+   },
+   {
+    "id": 10,
+    "story_name": "As a Data Analyst, I want to use the platform for recipe cost calculation, to help with budgeting and cost management for recipe development.",
+    "user_story": "As a Data Analyst, I can use the platform to calculate the cost of specific recipes, suggesting cost-effective alternatives for ingredients, helping with budgeting and cost management for recipe development, making the process valuable and testable."
+   }
+  ],
+  "response_time_s": 30.77,
+  "qa_time_s": 53.769999999999996
+ }
+}

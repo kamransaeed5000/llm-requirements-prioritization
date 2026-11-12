@@ -1,0 +1,1761 @@
+{
+ "GPT-3.5|1": {
+  "roles": {
+   "PO": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "Real-time analysis and comparison of vendor data is crucial for informed procurement decisions, and enabling real-time analysis (Story 4) has a high business value."
+    },
+    {
+     "id": 2,
+     "dollars": 15,
+     "justification": "Streamlining data extraction and translation (Stories 1 and 2) is essential for accurate analysis and comparison of vendor data."
+    },
+    {
+     "id": 3,
+     "dollars": 10,
+     "justification": "Storing vendor data in a MongoDB database (Story 3) is necessary for efficient data retrieval and comparison."
+    },
+    {
+     "id": 4,
+     "dollars": 10,
+     "justification": "Comparing pricing information from various suppliers (Story 5) is important for identifying the best vendors, but it's secondary to real-time analysis."
+    },
+    {
+     "id": 5,
+     "dollars": 8,
+     "justification": "Receiving recommendations for the best suppliers (Story 6) is a useful feature, but it's less critical than the core features of real-time analysis and data extraction."
+    },
+    {
+     "id": 6,
+     "dollars": 7,
+     "justification": "Calculating the total cost of procurement (Story 7) is important for optimizing costs, but it's still secondary to real-time analysis and data extraction."
+    },
+    {
+     "id": 7,
+     "dollars": 6,
+     "justification": "Analyzing ingredient costs and optimizing recipes (Story 8) is a specific use case that's important for recipe developers, but it's less critical than the core features."
+    },
+    {
+     "id": 8,
+     "dollars": 5,
+     "justification": "Comparing supplier rates for pasta (Story 9) is a specific use case that's important for procurement managers, but it's less critical than the core features."
+    },
+    {
+     "id": 9,
+     "dollars": 5,
+     "justification": "Calculating the cost of recipes (Story 10) is a specific use case that's important for recipe developers, but it's less critical than the core features."
+    },
+    {
+     "id": 10,
+     "dollars": 4,
+     "justification": "Developing APIs for data uploads (Story 11) is important for future integration, but it's still a lower priority than the core features."
+    },
+    {
+     "id": 11,
+     "dollars": 4,
+     "justification": "Enabling enhanced analysis of vendor data (Story 12) is a future enhancement that's less critical than the core features."
+    },
+    {
+     "id": 12,
+     "dollars": 1,
+     "justification": "The current system's struggles with vendor diversity and cost tracking (project description) make it essential to prioritize the core features that address these challenges."
+    }
+   ],
+   "QA": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "The ability to extract pricing information from PDFs is a fundamental requirement for the project, as it enables the comparison of vendor offerings in a structured format."
+    },
+    {
+     "id": 2,
+     "dollars": 15,
+     "justification": "The need to translate extracted data into a standardized format for LLM use is crucial for accurate analysis, and it's a key step in the data processing pipeline."
+    },
+    {
+     "id": 3,
+     "dollars": 10,
+     "justification": "Storing vendor data in a MongoDB database is essential for easy retrieval and comparison of data from various vendors, making it a necessary feature for the project."
+    },
+    {
+     "id": 4,
+     "dollars": 20,
+     "justification": "Enabling real-time analysis of vendor data through a user-friendly interface is a critical requirement for the project, as it enables procurement managers to make informed decisions about supplier selection and pricing."
+    },
+    {
+     "id": 5,
+     "dollars": 15,
+     "justification": "Comparing pricing information from various suppliers is a key feature of the project, and it enables procurement managers to identify the best vendors for their needs."
+    },
+    {
+     "id": 6,
+     "dollars": 10,
+     "justification": "Receiving recommendations for the best suppliers based on vendor data is a valuable feature for procurement managers, as it streamlines the procurement process."
+    },
+    {
+     "id": 7,
+     "dollars": 5,
+     "justification": "Calculating the total cost of procurement is an important feature for procurement managers, but it's not as critical as some of the other features, such as real-time analysis and supplier comparison."
+    },
+    {
+     "id": 8,
+     "dollars": 5,
+     "justification": "Analyzing ingredient costs and optimizing recipes is an important feature for recipe developers, but it's not as critical as some of the other features, such as real-time analysis and supplier comparison."
+    },
+    {
+     "id": 9,
+     "dollars": 5,
+     "justification": "Comparing supplier rates for pasta is a specific requirement, but it's not as critical as some of the other features, such as real-time analysis and supplier comparison."
+    },
+    {
+     "id": 10,
+     "dollars": 5,
+     "justification": "Calculating the cost of recipes is an important feature for recipe developers, but it's not as critical as some of the other features, such as real-time analysis and supplier comparison."
+    },
+    {
+     "id": 11,
+     "dollars": 5,
+     "justification": "Developing APIs for data uploads is an important feature for data analysts, but it's not as critical as some of the other features, such as real-time analysis and supplier comparison."
+    },
+    {
+     "id": 12,
+     "dollars": 5,
+     "justification": "Enabling enhanced analysis of vendor data through a user-friendly interface is a future requirement, but it's not as critical as some of the other features, such as real-time analysis and supplier comparison."
+    }
+   ],
+   "Dev": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "The ability to extract pricing information from PDFs is crucial for the project, as it sets the foundation for the rest of the features. This feature is a must-have and is essential for the platform's functionality."
+    },
+    {
+     "id": 3,
+     "dollars": 15,
+     "justification": "Storing vendor data in a MongoDB database is critical for scalability and data management. This feature enables efficient data retrieval and comparison, making it a high-priority task."
+    },
+    {
+     "id": 4,
+     "dollars": 15,
+     "justification": "Real-time analysis is a key feature for procurement managers to make informed decisions. This feature is essential for the platform's success and is closely tied to the other features."
+    },
+    {
+     "id": 5,
+     "dollars": 10,
+     "justification": "Comparing pricing information from various suppliers is a critical feature for procurement managers. This feature is essential for identifying the best vendors and is closely tied to the real-time analysis feature."
+    },
+    {
+     "id": 6,
+     "dollars": 5,
+     "justification": "Supplier recommendations are a nice-to-have feature, but they are not as critical as the other features. This feature is still important, but it can be implemented after the more critical features are completed."
+    },
+    {
+     "id": 7,
+     "dollars": 5,
+     "justification": "Calculating the total cost of procurement is a useful feature, but it is not as critical as the other features. This feature can be implemented after the more critical features are completed."
+    },
+    {
+     "id": 8,
+     "dollars": 5,
+     "justification": "Analyzing ingredient costs is a useful feature for recipe developers, but it is not as critical as the other features. This feature can be implemented after the more critical features are completed."
+    },
+    {
+     "id": 9,
+     "dollars": 5,
+     "justification": "Comparing supplier rates for pasta is a specific use case that is not as critical as the other features. This feature can be implemented after the more critical features are completed."
+    },
+    {
+     "id": 10,
+     "dollars": 5,
+     "justification": "Calculating recipe costs is a useful feature for recipe developers, but it is not as critical as the other features. This feature can be implemented after the more critical features are completed."
+    },
+    {
+     "id": 11,
+     "dollars": 5,
+     "justification": "Developing APIs for data uploads is a future feature that is not as critical as the other features. This feature can be implemented after the more critical features are completed."
+    },
+    {
+     "id": 12,
+     "dollars": 5,
+     "justification": "Enhanced analysis is a future feature that is not as critical as the other features. This feature can be implemented after the more critical features are completed."
+    }
+   ]
+  },
+  "manager": [
+   {
+    "id": 4,
+    "rank": 1,
+    "dollars": 20,
+    "justification": "Enabling real-time analysis of vendor data through a user-friendly interface is a critical requirement for the project, as it enables procurement managers to make informed decisions about supplier selection and pricing."
+   },
+   {
+    "id": 1,
+    "rank": 2,
+    "dollars": 18,
+    "justification": "The ability to extract pricing information from PDFs is a fundamental requirement for the project, as it enables the comparison of vendor offerings in a structured format."
+   },
+   {
+    "id": 3,
+    "rank": 3,
+    "dollars": 15,
+    "justification": "Storing vendor data in a MongoDB database is essential for easy retrieval and comparison of data from various vendors, making it a necessary feature for the project."
+   },
+   {
+    "id": 5,
+    "rank": 4,
+    "dollars": 15,
+    "justification": "Comparing pricing information from various suppliers is a key feature of the project, and it enables procurement managers to identify the best vendors for their needs."
+   },
+   {
+    "id": 2,
+    "rank": 5,
+    "dollars": 12,
+    "justification": "The need to translate extracted data into a standardized format for LLM use is crucial for accurate analysis, and it's a key step in the data processing pipeline."
+   },
+   {
+    "id": 6,
+    "rank": 6,
+    "dollars": 10,
+    "justification": "Receiving recommendations for the best suppliers based on vendor data is a valuable feature for procurement managers, as it streamlines the procurement process."
+   },
+   {
+    "id": 7,
+    "rank": 7,
+    "dollars": 8,
+    "justification": "Calculating the total cost of procurement is an important feature for procurement managers, but it's not as critical as some of the other features, such as real-time analysis and supplier comparison."
+   },
+   {
+    "id": 8,
+    "rank": 8,
+    "dollars": 6,
+    "justification": "Analyzing ingredient costs and optimizing recipes is an important feature for recipe developers, but it's not as critical as some of the other features, such as real-time analysis and supplier comparison."
+   },
+   {
+    "id": 9,
+    "rank": 9,
+    "dollars": 5,
+    "justification": "Comparing supplier rates for pasta is a specific requirement, but it's not as critical as some of the other features, such as real-time analysis and supplier comparison."
+   },
+   {
+    "id": 10,
+    "rank": 10,
+    "dollars": 5,
+    "justification": "Calculating the cost of recipes is an important feature for recipe developers, but it's not as critical as some of the other features, such as real-time analysis and supplier comparison."
+   },
+   {
+    "id": 11,
+    "rank": 11,
+    "dollars": 4,
+    "justification": "Developing APIs for data uploads is an important feature for data analysts, but it's not as critical as some of the other features, such as real-time analysis and supplier comparison."
+   },
+   {
+    "id": 12,
+    "rank": 12,
+    "dollars": 1,
+    "justification": "Enabling enhanced analysis of vendor data through a user-friendly interface is a future requirement, but it's not as critical as some of the other features, such as real-time analysis and supplier comparison."
+   }
+  ],
+  "dollars": {
+   "1": 15.1,
+   "2": 10.1,
+   "3": 12.6,
+   "4": 16.8,
+   "5": 12.6,
+   "6": 8.4,
+   "7": 6.7,
+   "8": 5.0,
+   "9": 4.2,
+   "10": 4.2,
+   "11": 3.4,
+   "12": 0.8
+  },
+  "rank": {
+   "1": 2,
+   "2": 4,
+   "3": 3,
+   "4": 1,
+   "5": 3,
+   "6": 5,
+   "7": 6,
+   "8": 7,
+   "9": 8,
+   "10": 8,
+   "11": 9,
+   "12": 10
+  },
+  "manager_raw_total": 119.0,
+  "time_s": 103.95
+ },
+ "GPT-3.5|2": {
+  "roles": {
+   "PO": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "VendorDataExtraction is critical for comparing vendor offerings, so it's worth 20 dollars."
+    },
+    {
+     "id": 2,
+     "dollars": 15,
+     "justification": "VendorDataTranslation is necessary for accurate analysis, but it's a supporting feature, so it's worth 15 dollars."
+    },
+    {
+     "id": 3,
+     "dollars": 10,
+     "justification": "MongoDBDataStorage is a necessary infrastructure feature, but it's not a key differentiator, so it's worth 10 dollars."
+    },
+    {
+     "id": 4,
+     "dollars": 15,
+     "justification": "RealTimeAnalysis is a key feature for procurement managers, but it's a supporting feature, so it's worth 15 dollars."
+    },
+    {
+     "id": 5,
+     "dollars": 10,
+     "justification": "SupplierComparison is important, but it's not as critical as some other features, so it's worth 10 dollars."
+    },
+    {
+     "id": 6,
+     "dollars": 5,
+     "justification": "SupplierRecommendation is a nice-to-have feature, but it's not essential, so it's worth 5 dollars."
+    },
+    {
+     "id": 7,
+     "dollars": 5,
+     "justification": "TotalCostCalculation is a supporting feature, but it's not as critical as some other features, so it's worth 5 dollars."
+    },
+    {
+     "id": 8,
+     "dollars": 5,
+     "justification": "IngredientAnalysis is a nice-to-have feature, but it's not essential, so it's worth 5 dollars."
+    },
+    {
+     "id": 9,
+     "dollars": 5,
+     "justification": "PastaSupplierRateComparison is a specific use case, but it's not as critical as some other features, so it's worth 5 dollars."
+    },
+    {
+     "id": 10,
+     "dollars": 5,
+     "justification": "RecipeCostCalculation is a nice-to-have feature, but it's not essential, so it's worth 5 dollars."
+    },
+    {
+     "id": 11,
+     "dollars": 5,
+     "justification": "APIDevelopment is a future feature, but it's not critical for the initial release, so it's worth 5 dollars."
+    },
+    {
+     "id": 12,
+     "dollars": 5,
+     "justification": "EnhancedAnalysis is a future feature, but it's not critical for the initial release, so it's worth 5 dollars."
+    }
+   ],
+   "QA": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "Story 4 - RealTimeAnalysis is critical for enabling real-time analysis of vendor data, which is the primary goal of the project."
+    },
+    {
+     "id": 2,
+     "dollars": 18,
+     "justification": "Story 5 - SupplierComparison is essential for comparing pricing information from various suppliers, which is a key requirement for identifying the best vendors."
+    },
+    {
+     "id": 3,
+     "dollars": 15,
+     "justification": "Story 2 - VendorDataTranslation is crucial for translating extracted data into a standardized format for LLM use, which is necessary for accurate analysis."
+    },
+    {
+     "id": 4,
+     "dollars": 12,
+     "justification": "Story 1 - VendorDataExtraction is necessary for extracting pricing information from PDFs, which is a fundamental requirement for the project."
+    },
+    {
+     "id": 5,
+     "dollars": 10,
+     "justification": "Story 3 - MongoDBDataStorage is important for storing vendor data in a MongoDB database, which is necessary for easy retrieval and comparison."
+    },
+    {
+     "id": 6,
+     "dollars": 8,
+     "justification": "Story 6 - SupplierRecommendation is useful for receiving recommendations for the best suppliers based on vendor data, but can be considered secondary to the primary goal of real-time analysis."
+    },
+    {
+     "id": 7,
+     "dollars": 5,
+     "justification": "Story 7 - TotalCostCalculation is important for calculating the total cost of procurement, but can be considered less critical than the other requirements."
+    },
+    {
+     "id": 8,
+     "dollars": 5,
+     "justification": "Story 8 - IngredientAnalysis is useful for analyzing ingredient costs and optimizing recipes, but can be considered secondary to the primary goal of real-time analysis."
+    },
+    {
+     "id": 9,
+     "dollars": 4,
+     "justification": "Story 9 - PastaSupplierRateComparison is specific to a particular use case and can be considered less critical than the other requirements."
+    },
+    {
+     "id": 10,
+     "dollars": 3,
+     "justification": "Story 10 - RecipeCostCalculation is useful for calculating the cost of recipes, but can be considered secondary to the primary goal of real-time analysis."
+    },
+    {
+     "id": 11,
+     "dollars": 2,
+     "justification": "Story 11 - APIDevelopment is important for developing APIs for data uploads, but can be considered secondary to the primary goal of real-time analysis."
+    },
+    {
+     "id": 12,
+     "dollars": 1,
+     "justification": "Story 12 - EnhancedAnalysis is useful for enabling enhanced analysis of vendor data, but can be considered least critical among all the requirements."
+    }
+   ],
+   "Dev": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "VendorDataExtraction is critical for comparing vendor offerings, and a structured format is essential for analysis."
+    },
+    {
+     "id": 2,
+     "dollars": 15,
+     "justification": "RealTimeAnalysis enables informed decision-making for procurement managers, making it a high-priority feature."
+    },
+    {
+     "id": 3,
+     "dollars": 12,
+     "justification": "SupplierComparison and SupplierRecommendation are crucial for identifying the best vendors, and their combined importance justifies a significant allocation."
+    },
+    {
+     "id": 4,
+     "dollars": 10,
+     "justification": "TotalCostCalculation is essential for optimizing costs and making better purchasing decisions, but its importance is slightly lower than the top three."
+    },
+    {
+     "id": 5,
+     "dollars": 8,
+     "justification": "IngredientAnalysis and RecipeCostCalculation are important for optimizing recipes and product offerings, but their impact is more focused on a specific use case."
+    },
+    {
+     "id": 6,
+     "dollars": 5,
+     "justification": "APIDevelopment is a necessary step for integrating vendor data, but its importance is relatively lower compared to the other features."
+    },
+    {
+     "id": 7,
+     "dollars": 5,
+     "justification": "MongoDBDataStorage is a critical component for data storage, but its importance is somewhat offset by the use of a cloud-based database."
+    },
+    {
+     "id": 8,
+     "dollars": 5,
+     "justification": "VendorDataTranslation is essential for LLM use, but its importance is somewhat lower compared to the other features."
+    },
+    {
+     "id": 9,
+     "dollars": 4,
+     "justification": "PastaSupplierRateComparison is a specific use case, and while important, its impact is more focused on a particular supplier."
+    },
+    {
+     "id": 10,
+     "dollars": 3,
+     "justification": "EnhancedAnalysis is a future development that will provide additional insights, but its importance is relatively lower compared to the other features."
+    },
+    {
+     "id": 11,
+     "dollars": 2,
+     "justification": "VendorDataTranslation is a necessary step for LLM use, but its importance is somewhat lower compared to the other features."
+    },
+    {
+     "id": 12,
+     "dollars": 1,
+     "justification": "This story is more of a follow-up to APIDevelopment and EnhanceAnalysis, and its importance is relatively lower."
+    }
+   ]
+  },
+  "manager": [
+   {
+    "id": 1,
+    "rank": 1,
+    "dollars": 20,
+    "justification": "VendorDataExtraction is critical for comparing vendor offerings, so it's worth 20 dollars."
+   },
+   {
+    "id": 2,
+    "rank": 2,
+    "dollars": 18,
+    "justification": "RealTimeAnalysis is critical for enabling real-time analysis of vendor data, which is the primary goal of the project."
+   },
+   {
+    "id": 3,
+    "rank": 3,
+    "dollars": 17,
+    "justification": "VendorDataTranslation is crucial for translating extracted data into a standardized format for LLM use, which is necessary for accurate analysis."
+   },
+   {
+    "id": 4,
+    "rank": 4,
+    "dollars": 15,
+    "justification": "SupplierComparison is essential for comparing pricing information from various suppliers, which is a key requirement for identifying the best vendors."
+   },
+   {
+    "id": 5,
+    "rank": 5,
+    "dollars": 15,
+    "justification": "MongoDBDataStorage is a necessary infrastructure feature, but it's not a key differentiator, so it's worth 15 dollars."
+   },
+   {
+    "id": 6,
+    "rank": 6,
+    "dollars": 14,
+    "justification": "SupplierRecommendation is useful for receiving recommendations for the best suppliers based on vendor data, but can be considered secondary to the primary goal of real-time analysis."
+   },
+   {
+    "id": 7,
+    "rank": 7,
+    "dollars": 12,
+    "justification": "TotalCostCalculation is a supporting feature, but it's not as critical as some other features, so it's worth 12 dollars."
+   },
+   {
+    "id": 8,
+    "rank": 8,
+    "dollars": 10,
+    "justification": "IngredientAnalysis is a nice-to-have feature, but it's not essential, so it's worth 10 dollars."
+   },
+   {
+    "id": 9,
+    "rank": 9,
+    "dollars": 9,
+    "justification": "PastaSupplierRateComparison is a specific use case, but it's not as critical as some other features, so it's worth 9 dollars."
+   },
+   {
+    "id": 10,
+    "rank": 10,
+    "dollars": 8,
+    "justification": "RecipeCostCalculation is a nice-to-have feature, but it's not essential, so it's worth 8 dollars."
+   },
+   {
+    "id": 11,
+    "rank": 11,
+    "dollars": 6,
+    "justification": "APIDevelopment is a future feature, but it's not critical for the initial release, so it's worth 6 dollars."
+   },
+   {
+    "id": 12,
+    "rank": 12,
+    "dollars": 5,
+    "justification": "EnhancedAnalysis is a future feature, but it's not critical for the initial release, so it's worth 5 dollars."
+   }
+  ],
+  "dollars": {
+   "1": 13.4,
+   "2": 12.1,
+   "3": 11.4,
+   "4": 10.1,
+   "5": 10.1,
+   "6": 9.4,
+   "7": 8.1,
+   "8": 6.7,
+   "9": 6.0,
+   "10": 5.4,
+   "11": 4.0,
+   "12": 3.4
+  },
+  "rank": {
+   "1": 1,
+   "2": 2,
+   "3": 3,
+   "4": 4,
+   "5": 4,
+   "6": 5,
+   "7": 6,
+   "8": 7,
+   "9": 8,
+   "10": 9,
+   "11": 10,
+   "12": 11
+  },
+  "manager_raw_total": 149.0,
+  "time_s": 81.67
+ },
+ "GPT-3.5|3": {
+  "roles": {
+   "PO": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "This user story is a foundational requirement for the platform. Without it, we cannot extract and analyze vendor data."
+    },
+    {
+     "id": 2,
+     "dollars": 15,
+     "justification": "This user story is crucial for enabling real-time analysis and making informed decisions about supplier selection and pricing."
+    },
+    {
+     "id": 3,
+     "dollars": 10,
+     "justification": "This user story is important for storing and retrieving vendor data, but is a secondary requirement compared to data extraction and analysis."
+    },
+    {
+     "id": 4,
+     "dollars": 15,
+     "justification": "This user story is essential for enabling real-time analysis and making informed decisions about supplier selection and pricing."
+    },
+    {
+     "id": 5,
+     "dollars": 10,
+     "justification": "This user story is important for comparing pricing information, but is a secondary requirement compared to data extraction and analysis."
+    },
+    {
+     "id": 6,
+     "dollars": 5,
+     "justification": "This user story is a nice-to-have feature that can be implemented later."
+    },
+    {
+     "id": 7,
+     "dollars": 5,
+     "justification": "This user story is a nice-to-have feature that can be implemented later."
+    },
+    {
+     "id": 8,
+     "dollars": 5,
+     "justification": "This user story is a nice-to-have feature that can be implemented later."
+    },
+    {
+     "id": 9,
+     "dollars": 5,
+     "justification": "This user story is a nice-to-have feature that can be implemented later."
+    },
+    {
+     "id": 10,
+     "dollars": 5,
+     "justification": "This user story is a nice-to-have feature that can be implemented later."
+    },
+    {
+     "id": 11,
+     "dollars": 5,
+     "justification": "This user story is a nice-to-have feature that can be implemented later."
+    },
+    {
+     "id": 12,
+     "dollars": 5,
+     "justification": "This user story is a nice-to-have feature that can be implemented later."
+    }
+   ],
+   "QA": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "Critical for the core functionality of the platform, enabling data extraction and storage, and is a pre-requisite for other features."
+    },
+    {
+     "id": 2,
+     "dollars": 20,
+     "justification": "Essential for the platform's ability to provide meaningful insights, and is a key feature for procurement managers."
+    },
+    {
+     "id": 3,
+     "dollars": 10,
+     "justification": "Important for the platform's ability to provide accurate and structured data, but is secondary to data extraction and storage."
+    },
+    {
+     "id": 4,
+     "dollars": 15,
+     "justification": "Important for the platform's user-friendliness and the ability to provide real-time analysis, but is secondary to data storage and vendor comparison."
+    },
+    {
+     "id": 5,
+     "dollars": 15,
+     "justification": "Important for the platform's ability to provide recommendations and optimize procurement, but is secondary to data comparison and analysis."
+    },
+    {
+     "id": 6,
+     "dollars": 10,
+     "justification": "Nice-to-have feature, but is secondary to the core features of the platform."
+    },
+    {
+     "id": 7,
+     "dollars": 5,
+     "justification": "Low-priority feature, as it is secondary to the core features of the platform and can be done later."
+    },
+    {
+     "id": 8,
+     "dollars": 5,
+     "justification": "Low-priority feature, as it is secondary to the core features of the platform and can be done later."
+    },
+    {
+     "id": 9,
+     "dollars": 5,
+     "justification": "Low-priority feature, as it is secondary to the core features of the platform and can be done later."
+    },
+    {
+     "id": 10,
+     "dollars": 5,
+     "justification": "Low-priority feature, as it is secondary to the core features of the platform and can be done later."
+    },
+    {
+     "id": 11,
+     "dollars": 5,
+     "justification": "Low-priority feature, as it is secondary to the core features of the platform and can be done later."
+    },
+    {
+     "id": 12,
+     "dollars": 5,
+     "justification": "Low-priority feature, as it is secondary to the core features of the platform and can be done later."
+    }
+   ],
+   "Dev": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "VendorDataExtraction is a foundational requirement for the project. Without it, the entire system cannot function. It's essential for extracting pricing information from PDFs, and it sets the stage for the rest of the features."
+    },
+    {
+     "id": 2,
+     "dollars": 15,
+     "justification": "VendorDataTranslation is critical for enabling LLM use. Without it, the data would be unusable in the intended context. It's a key enabler for the analysis and comparison features."
+    },
+    {
+     "id": 3,
+     "dollars": 10,
+     "justification": "MongoDBDataStorage is a necessary component for storing vendor data. It's a supporting feature that enables the storage and retrieval of vendor data, but it's not as critical as the extraction and translation features."
+    },
+    {
+     "id": 4,
+     "dollars": 10,
+     "justification": "RealTimeAnalysis is a key feature for enabling procurement managers to make informed decisions. However, it's not as critical as the extraction and translation features, and it can be implemented after the foundational features are in place."
+    },
+    {
+     "id": 5,
+     "dollars": 8,
+     "justification": "SupplierComparison is an important feature for enabling procurement managers to identify the best vendors. However, it's not as critical as the real-time analysis feature, and it can be implemented after the foundational features are in place."
+    },
+    {
+     "id": 6,
+     "dollars": 5,
+     "justification": "SupplierRecommendation is a nice-to-have feature that can be implemented after the foundational features are in place. While it's useful for streamlining the procurement process, it's not as critical as the other features."
+    },
+    {
+     "id": 7,
+     "dollars": 5,
+     "justification": "TotalCostCalculation is an important feature for enabling procurement managers to optimize costs. However, it's not as critical as the real-time analysis feature, and it can be implemented after the foundational features are in place."
+    },
+    {
+     "id": 8,
+     "dollars": 3,
+     "justification": "IngredientAnalysis is a nice-to-have feature that can be implemented after the foundational features are in place. While it's useful for recipe development, it's not as critical as the other features."
+    },
+    {
+     "id": 9,
+     "dollars": 2,
+     "justification": "PastaSupplierRateComparison is a specific use case that can be implemented after the foundational features are in place. While it's useful for procurement managers, it's not as critical as the other features."
+    },
+    {
+     "id": 10,
+     "dollars": 2,
+     "justification": "RecipeCostCalculation is a nice-to-have feature that can be implemented after the foundational features are in place. While it's useful for recipe development, it's not as critical as the other features."
+    },
+    {
+     "id": 11,
+     "dollars": 5,
+     "justification": "APIDevelopment is a supporting feature that enables data uploads. While it's necessary for the system, it's not as critical as the foundational features."
+    },
+    {
+     "id": 12,
+     "dollars": 5,
+     "justification": "EnhancedAnalysis is a future enhancement that can be implemented after the foundational features are in place. While it's useful for procurement managers, it's not as critical as the other features."
+    }
+   ]
+  },
+  "manager": [
+   {
+    "id": 1,
+    "rank": 1,
+    "dollars": 20,
+    "justification": "VendorDataExtraction is a foundational requirement for the project. Without it, the entire system cannot function. It's essential for extracting pricing information from PDFs, and it sets the stage for the rest of the features."
+   },
+   {
+    "id": 2,
+    "rank": 2,
+    "dollars": 18,
+    "justification": "VendorDataTranslation is critical for enabling LLM use. Without it, the data would be unusable in the intended context. It's a key enabler for the analysis and comparison features."
+   },
+   {
+    "id": 4,
+    "rank": 3,
+    "dollars": 15,
+    "justification": "RealTimeAnalysis is a key feature for enabling procurement managers to make informed decisions. However, it's not as critical as the extraction and translation features, and it can be implemented after the foundational features are in place."
+   },
+   {
+    "id": 5,
+    "rank": 4,
+    "dollars": 13,
+    "justification": "SupplierComparison is an important feature for enabling procurement managers to identify the best vendors. However, it's not as critical as the real-time analysis feature, and it can be implemented after the foundational features are in place."
+   },
+   {
+    "id": 3,
+    "rank": 5,
+    "dollars": 12,
+    "justification": "MongoDBDataStorage is a necessary component for storing vendor data. It's a supporting feature that enables the storage and retrieval of vendor data, but it's not as critical as the extraction and translation features."
+   },
+   {
+    "id": 6,
+    "rank": 6,
+    "dollars": 10,
+    "justification": "SupplierRecommendation is a nice-to-have feature that can be implemented after the foundational features are in place. While it's useful for streamlining the procurement process, it's not as critical as the other features."
+   },
+   {
+    "id": 7,
+    "rank": 7,
+    "dollars": 8,
+    "justification": "TotalCostCalculation is an important feature for enabling procurement managers to optimize costs. However, it's not as critical as the real-time analysis feature, and it can be implemented after the foundational features are in place."
+   },
+   {
+    "id": 11,
+    "rank": 8,
+    "dollars": 5,
+    "justification": "APIDevelopment is a supporting feature that enables data uploads. While it's necessary for the system, it's not as critical as the foundational features."
+   },
+   {
+    "id": 12,
+    "rank": 9,
+    "dollars": 5,
+    "justification": "EnhancedAnalysis is a future enhancement that can be implemented after the foundational features are in place. While it's useful for procurement managers, it's not as critical as the other features."
+   },
+   {
+    "id": 8,
+    "rank": 10,
+    "dollars": 3,
+    "justification": "IngredientAnalysis is a nice-to-have feature that can be implemented after the foundational features are in place. While it's useful for recipe development, it's not as critical as the other features."
+   },
+   {
+    "id": 9,
+    "rank": 11,
+    "dollars": 2,
+    "justification": "PastaSupplierRateComparison is a specific use case that can be implemented after the foundational features are in place. While it's useful for procurement managers, it's not as critical as the other features."
+   },
+   {
+    "id": 10,
+    "rank": 12,
+    "dollars": 2,
+    "justification": "RecipeCostCalculation is a nice-to-have feature that can be implemented after the foundational features are in place. While it's useful for recipe development, it's not as critical as the other features."
+   }
+  ],
+  "dollars": {
+   "1": 17.7,
+   "2": 15.9,
+   "3": 10.6,
+   "4": 13.3,
+   "5": 11.5,
+   "6": 8.8,
+   "7": 7.1,
+   "8": 2.7,
+   "9": 1.8,
+   "10": 1.8,
+   "11": 4.4,
+   "12": 4.4
+  },
+  "rank": {
+   "1": 1,
+   "2": 2,
+   "3": 5,
+   "4": 3,
+   "5": 4,
+   "6": 6,
+   "7": 7,
+   "8": 9,
+   "9": 10,
+   "10": 10,
+   "11": 8,
+   "12": 8
+  },
+  "manager_raw_total": 113.0,
+  "time_s": 93.15
+ },
+ "GPT-4o|1": {
+  "roles": {
+   "PO": [
+    {
+     "id": 1,
+     "dollars": 15,
+     "justification": "Enabling real-time analysis is crucial for informed decisions and user-friendly interface."
+    },
+    {
+     "id": 4,
+     "dollars": 15,
+     "justification": "Real-time analysis is a key feature for the procurement manager to make decisions."
+    },
+    {
+     "id": 5,
+     "dollars": 14,
+     "justification": "Comparing pricing information from various suppliers is essential for identifying the best vendors."
+    },
+    {
+     "id": 6,
+     "dollars": 10,
+     "justification": "Receiving recommendations for the best suppliers based on vendor data can streamline the procurement process."
+    },
+    {
+     "id": 7,
+     "dollars": 10,
+     "justification": "Calculating the total cost of procurement is important for optimizing costs and making better purchasing decisions."
+    },
+    {
+     "id": 11,
+     "dollars": 8,
+     "justification": "Developing APIs for data uploads is necessary for easily integrating vendor data into the system."
+    },
+    {
+     "id": 3,
+     "dollars": 7,
+     "justification": "Storing vendor data in MongoDB ensures easy retrieval and comparison of data from various vendors."
+    },
+    {
+     "id": 2,
+     "dollars": 6,
+     "justification": "Translating extracted data into a standardized format is important for accurate analysis."
+    },
+    {
+     "id": 10,
+     "dollars": 5,
+     "justification": "Calculating the cost of recipes ensures that our products are competitively priced and profitable."
+    },
+    {
+     "id": 8,
+     "dollars": 4,
+     "justification": "Analyzing ingredient costs and optimizing recipes can reduce expenses and improve product offerings."
+    },
+    {
+     "id": 9,
+     "dollars": 3,
+     "justification": "Comparing supplier rates for pasta is a specific use case that can help optimize pasta procurement."
+    },
+    {
+     "id": 12,
+     "dollars": 2,
+     "justification": "Enhanced analysis can provide more insights for better supplier selection and pricing, but it's less crucial at this stage."
+    }
+   ],
+   "QA": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "Enabling real-time analysis is crucial for informed decision-making, which is the primary goal of the project."
+    },
+    {
+     "id": 4,
+     "dollars": 15,
+     "justification": "A user-friendly interface is essential for easy access and utilization of the system by procurement managers and data analysts."
+    },
+    {
+     "id": 3,
+     "dollars": 14,
+     "justification": "Storing vendor data in MongoDB will ensure efficient data retrieval and comparison across vendors."
+    },
+    {
+     "id": 5,
+     "dollars": 13,
+     "justification": "Comparing pricing information from various suppliers is key to identifying the best vendors for our needs."
+    },
+    {
+     "id": 6,
+     "dollars": 12,
+     "justification": "Recommending the best suppliers based on data analysis will streamline the procurement process."
+    },
+    {
+     "id": 7,
+     "dollars": 10,
+     "justification": "Calculating the total cost of procurement is important for cost optimization and purchasing decisions."
+    },
+    {
+     "id": 11,
+     "dollars": 8,
+     "justification": "Developing APIs for data uploads will facilitate integration of vendor data into the system."
+    },
+    {
+     "id": 12,
+     "dollars": 6,
+     "justification": "Enhanced analysis will provide more detailed insights for better procurement and cost management."
+    },
+    {
+     "id": 2,
+     "dollars": 5,
+     "justification": "Translating extracted data into a standardized format is necessary for accurate analysis."
+    },
+    {
+     "id": 8,
+     "dollars": 4,
+     "justification": "Analyzing ingredient costs can help optimize recipes and improve product offerings."
+    },
+    {
+     "id": 9,
+     "dollars": 3,
+     "justification": "Comparing supplier rates for pasta is specific to certain products and may not have a significant impact on the overall system."
+    },
+    {
+     "id": 10,
+     "dollars": 1,
+     "justification": "Calculating recipe costs may not have a significant impact on the overall system, as it is specific to recipe development."
+    }
+   ],
+   "Dev": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "Enabling real-time analysis is crucial for making informed decisions, and a user-friendly interface is necessary for wide adoption."
+    },
+    {
+     "id": 4,
+     "dollars": 15,
+     "justification": "Real-time analysis is essential for procurement managers to make timely decisions."
+    },
+    {
+     "id": 5,
+     "dollars": 12,
+     "justification": "Comparing pricing information from various suppliers is necessary for identifying the best vendors."
+    },
+    {
+     "id": 6,
+     "dollars": 10,
+     "justification": "Recommendations based on vendor data can help streamline the procurement process."
+    },
+    {
+     "id": 7,
+     "dollars": 10,
+     "justification": "Calculating the total cost of procurement is necessary for optimizing costs and making better purchasing decisions."
+    },
+    {
+     "id": 3,
+     "dollars": 8,
+     "justification": "Storing vendor data in a MongoDB database allows for easy retrieval and comparison of data."
+    },
+    {
+     "id": 2,
+     "dollars": 8,
+     "justification": "Translating data into a standardized format is necessary for accurate analysis."
+    },
+    {
+     "id": 11,
+     "dollars": 6,
+     "justification": "APIs for data uploads are necessary for integrating vendor data into our system."
+    },
+    {
+     "id": 12,
+     "dollars": 4,
+     "justification": "Enhanced analysis can provide more insights for better procurement and cost management."
+    },
+    {
+     "id": 8,
+     "dollars": 3,
+     "justification": "Analyzing ingredient costs can help optimize recipes and improve product offerings."
+    },
+    {
+     "id": 9,
+     "dollars": 2,
+     "justification": "Comparing supplier rates for pasta is a specific use case that can help with procurement decisions."
+    },
+    {
+     "id": 10,
+     "dollars": 1,
+     "justification": "Calculating the cost of recipes is a specific use case that can help ensure competitively priced and profitable products."
+    }
+   ]
+  },
+  "manager": [
+   {
+    "id": 1,
+    "rank": 1,
+    "dollars": 20,
+    "justification": "Enabling real-time analysis is crucial for informed decisions, providing a user-friendly interface, and facilitating wide adoption."
+   },
+   {
+    "id": 4,
+    "rank": 2,
+    "dollars": 15,
+    "justification": "Real-time analysis is essential for procurement managers to make timely decisions."
+   },
+   {
+    "id": 5,
+    "rank": 3,
+    "dollars": 12,
+    "justification": "Comparing pricing information from various suppliers is necessary for identifying the best vendors."
+   },
+   {
+    "id": 6,
+    "rank": 4,
+    "dollars": 10,
+    "justification": "Recommendations based on vendor data can help streamline the procurement process."
+   },
+   {
+    "id": 7,
+    "rank": 5,
+    "dollars": 10,
+    "justification": "Calculating the total cost of procurement is necessary for optimizing costs and making better purchasing decisions."
+   },
+   {
+    "id": 3,
+    "rank": 6,
+    "dollars": 8,
+    "justification": "Storing vendor data in a MongoDB database allows for easy retrieval and comparison of data."
+   },
+   {
+    "id": 2,
+    "rank": 7,
+    "dollars": 8,
+    "justification": "Translating data into a standardized format is necessary for accurate analysis."
+   },
+   {
+    "id": 11,
+    "rank": 8,
+    "dollars": 6,
+    "justification": "APIs for data uploads are necessary for integrating vendor data into our system."
+   },
+   {
+    "id": 12,
+    "rank": 9,
+    "dollars": 4,
+    "justification": "Enhanced analysis can provide more insights for better procurement and cost management."
+   },
+   {
+    "id": 8,
+    "rank": 10,
+    "dollars": 3,
+    "justification": "Analyzing ingredient costs can help optimize recipes and improve product offerings."
+   },
+   {
+    "id": 9,
+    "rank": 11,
+    "dollars": 2,
+    "justification": "Comparing supplier rates for pasta is a specific use case that can help with procurement decisions."
+   },
+   {
+    "id": 10,
+    "rank": 12,
+    "dollars": 1,
+    "justification": "Calculating the cost of recipes is a specific use case that can help ensure competitively priced and profitable products."
+   }
+  ],
+  "dollars": {
+   "1": 20.2,
+   "2": 8.1,
+   "3": 8.1,
+   "4": 15.2,
+   "5": 12.1,
+   "6": 10.1,
+   "7": 10.1,
+   "8": 3.0,
+   "9": 2.0,
+   "10": 1.0,
+   "11": 6.1,
+   "12": 4.0
+  },
+  "rank": {
+   "1": 1,
+   "2": 5,
+   "3": 5,
+   "4": 2,
+   "5": 3,
+   "6": 4,
+   "7": 4,
+   "8": 8,
+   "9": 9,
+   "10": 10,
+   "11": 6,
+   "12": 7
+  },
+  "manager_raw_total": 99.0,
+  "time_s": 83.37
+ },
+ "GPT-4o|2": {
+  "roles": {
+   "PO": [
+    {
+     "id": 1,
+     "dollars": 15,
+     "justification": "Enables data extraction from PDFs, a crucial first step for the entire system."
+    },
+    {
+     "id": 2,
+     "dollars": 15,
+     "justification": "Standardization of data is essential for accurate analysis and comparison."
+    },
+    {
+     "id": 3,
+     "dollars": 15,
+     "justification": "Efficient data storage in MongoDB is necessary for retrieval and comparison of data."
+    },
+    {
+     "id": 4,
+     "dollars": 10,
+     "justification": "Real-time analysis is important for making timely decisions and responding to changes."
+    },
+    {
+     "id": 5,
+     "dollars": 10,
+     "justification": "Comparing pricing information is the core feature for identifying the best suppliers."
+    },
+    {
+     "id": 6,
+     "dollars": 7,
+     "justification": "Supplier recommendations can help streamline the procurement process."
+    },
+    {
+     "id": 7,
+     "dollars": 5,
+     "justification": "Calculating total cost of procurement provides insights for optimizing costs."
+    },
+    {
+     "id": 8,
+     "dollars": 5,
+     "justification": "Ingredient analysis can help reduce expenses and improve product offerings."
+    },
+    {
+     "id": 9,
+     "dollars": 3,
+     "justification": "Pasta supplier rate comparison can help optimize procurement for specific products."
+    },
+    {
+     "id": 10,
+     "dollars": 3,
+     "justification": "Recipe cost calculation ensures competitively priced and profitable products."
+    },
+    {
+     "id": 11,
+     "dollars": 5,
+     "justification": "API development enables easy integration of vendor data into the system."
+    },
+    {
+     "id": 12,
+     "dollars": 5,
+     "justification": "Enhanced analysis can provide more detailed insights for better decisions."
+    }
+   ],
+   "QA": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "Enabling real-time analysis and providing insights into supplier offerings through a functional demo is crucial for the project's success. The real-time analysis user story will serve as the foundation for other features."
+    },
+    {
+     "id": 4,
+     "dollars": 16,
+     "justification": "Providing a user-friendly interface for real-time analysis is essential for the procurement manager to make informed decisions about supplier selection and pricing."
+    },
+    {
+     "id": 5,
+     "dollars": 14,
+     "justification": "Comparing pricing information from various suppliers is a key feature for identifying the best vendors for our needs."
+    },
+    {
+     "id": 6,
+     "dollars": 12,
+     "justification": "Receiving recommendations for the best suppliers based on vendor data will streamline our procurement process."
+    },
+    {
+     "id": 7,
+     "dollars": 10,
+     "justification": "Calculating the total cost of procurement is important for optimizing our costs and making better purchasing decisions."
+    },
+    {
+     "id": 3,
+     "dollars": 8,
+     "justification": "Storing vendor data in a MongoDB database will make it easy to retrieve and compare data from various vendors."
+    },
+    {
+     "id": 2,
+     "dollars": 7,
+     "justification": "Translating extracted data into a standardized format for LLM use is necessary for accurate analysis of vendor data."
+    },
+    {
+     "id": 11,
+     "dollars": 6,
+     "justification": "Developing APIs for data uploads will allow for easy integration of vendor data into the system."
+    },
+    {
+     "id": 12,
+     "dollars": 5,
+     "justification": "Enhanced analysis of vendor data will enable procurement managers to make more informed decisions about supplier selection and pricing."
+    },
+    {
+     "id": 8,
+     "dollars": 4,
+     "justification": "Analyzing ingredient costs and optimizing recipes will help reduce expenses and improve product offerings."
+    },
+    {
+     "id": 9,
+     "dollars": 3,
+     "justification": "Comparing supplier rates for pasta is a specific use case that will contribute to the overall project goals."
+    },
+    {
+     "id": 10,
+     "dollars": 2,
+     "justification": "Calculating the cost of recipes is a specific use case that will help ensure our products are competitively priced and profitable."
+    }
+   ],
+   "Dev": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "Enabling real-time analysis and a user-friendly interface is crucial for informed decision-making by procurement managers."
+    },
+    {
+     "id": 4,
+     "dollars": 15,
+     "justification": "Real-time analysis is an essential feature that will streamline the procurement process and improve decision-making."
+    },
+    {
+     "id": 5,
+     "dollars": 15,
+     "justification": "Comparing pricing information from various suppliers is essential for identifying the best vendors for our needs."
+    },
+    {
+     "id": 6,
+     "dollars": 10,
+     "justification": "Receiving recommendations for the best suppliers based on vendor data will help streamline the procurement process."
+    },
+    {
+     "id": 7,
+     "dollars": 10,
+     "justification": "Calculating the total cost of procurement is necessary for optimizing costs and making better purchasing decisions."
+    },
+    {
+     "id": 11,
+     "dollars": 10,
+     "justification": "Developing APIs for data uploads will make it easier to integrate vendor data into our system."
+    },
+    {
+     "id": 2,
+     "dollars": 8,
+     "justification": "Translating extracted data into a standardized format for LLM use is important for accurate analysis."
+    },
+    {
+     "id": 3,
+     "dollars": 6,
+     "justification": "Storing vendor data in a MongoDB database will make it easy to retrieve and compare data from various vendors."
+    },
+    {
+     "id": 8,
+     "dollars": 4,
+     "justification": "Analyzing ingredient costs and optimizing recipes will help reduce expenses and improve product offerings."
+    },
+    {
+     "id": 9,
+     "dollars": 3,
+     "justification": "Comparing supplier rates for pasta will help identify the best vendors for our pasta needs."
+    },
+    {
+     "id": 10,
+     "dollars": 3,
+     "justification": "Calculating the cost of recipes is necessary for ensuring that our products are competitively priced and profitable."
+    },
+    {
+     "id": 12,
+     "dollars": 1,
+     "justification": "Enhanced analysis of vendor data will provide more insights for better procurement and cost management, but it's less urgent than the core features."
+    }
+   ]
+  },
+  "manager": [
+   {
+    "id": 1,
+    "rank": 1,
+    "dollars": 15,
+    "justification": "Enables data extraction from PDFs, a crucial first step for the entire system. (PO, QA, Dev)"
+   },
+   {
+    "id": 5,
+    "rank": 2,
+    "dollars": 14,
+    "justification": "Comparing pricing information from various suppliers is a key feature for identifying the best vendors for our needs. (PO, QA, Dev)"
+   },
+   {
+    "id": 4,
+    "rank": 3,
+    "dollars": 13,
+    "justification": "Providing a user-friendly interface for real-time analysis is essential for the procurement manager to make informed decisions about supplier selection and pricing. (PO, QA, Dev)"
+   },
+   {
+    "id": 7,
+    "rank": 4,
+    "dollars": 10,
+    "justification": "Calculating the total cost of procurement is important for optimizing our costs and making better purchasing decisions. (PO, QA, Dev)"
+   },
+   {
+    "id": 2,
+    "rank": 5,
+    "dollars": 8,
+    "justification": "Translating extracted data into a standardized format for LLM use is necessary for accurate analysis of vendor data. (PO, QA, Dev)"
+   },
+   {
+    "id": 3,
+    "rank": 6,
+    "dollars": 7,
+    "justification": "Storing vendor data in a MongoDB database will make it easy to retrieve and compare data from various vendors. (PO, QA, Dev)"
+   },
+   {
+    "id": 6,
+    "rank": 7,
+    "dollars": 6,
+    "justification": "Receiving recommendations for the best suppliers based on vendor data will streamline our procurement process. (PO, QA, Dev)"
+   },
+   {
+    "id": 11,
+    "rank": 8,
+    "dollars": 5,
+    "justification": "Developing APIs for data uploads will allow for easy integration of vendor data into our system. (PO, QA, Dev)"
+   },
+   {
+    "id": 8,
+    "rank": 9,
+    "dollars": 4,
+    "justification": "Analyzing ingredient costs and optimizing recipes will help reduce expenses and improve product offerings. (PO, QA, Dev)"
+   },
+   {
+    "id": 9,
+    "rank": 10,
+    "dollars": 3,
+    "justification": "Comparing supplier rates for pasta will help identify the best vendors for our pasta needs. (PO, QA, Dev)"
+   },
+   {
+    "id": 10,
+    "rank": 11,
+    "dollars": 2,
+    "justification": "Calculating the cost of recipes is necessary for ensuring that our products are competitively priced and profitable. (PO, QA, Dev)"
+   },
+   {
+    "id": 12,
+    "rank": 12,
+    "dollars": 1,
+    "justification": "Enhanced analysis of vendor data will provide more insights for better procurement and cost management, but it's less urgent than the core features. (PO, QA, Dev)"
+   }
+  ],
+  "dollars": {
+   "1": 17.0,
+   "2": 9.1,
+   "3": 8.0,
+   "4": 14.8,
+   "5": 15.9,
+   "6": 6.8,
+   "7": 11.4,
+   "8": 4.5,
+   "9": 3.4,
+   "10": 2.3,
+   "11": 5.7,
+   "12": 1.1
+  },
+  "rank": {
+   "1": 1,
+   "2": 5,
+   "3": 6,
+   "4": 3,
+   "5": 2,
+   "6": 7,
+   "7": 4,
+   "8": 9,
+   "9": 10,
+   "10": 11,
+   "11": 8,
+   "12": 12
+  },
+  "manager_raw_total": 88.0,
+  "time_s": 90.82
+ },
+ "GPT-4o|3": {
+  "roles": {
+   "PO": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "Enabling real-time analysis is crucial for informed decisions and is the backbone of the entire project."
+    },
+    {
+     "id": 4,
+     "dollars": 15,
+     "justification": "A user-friendly interface is essential for easy access and understanding of the data for procurement managers."
+    },
+    {
+     "id": 6,
+     "dollars": 14,
+     "justification": "Comparing pricing information from vendors is the primary goal of the project, and it's necessary for identifying the best suppliers."
+    },
+    {
+     "id": 5,
+     "dollars": 10,
+     "justification": "Receiving recommendations based on vendor data will help streamline the procurement process."
+    },
+    {
+     "id": 7,
+     "dollars": 9,
+     "justification": "Calculating the total cost of procurement is essential for cost optimization and better purchasing decisions."
+    },
+    {
+     "id": 2,
+     "dollars": 8,
+     "justification": "Standardizing the data is necessary for accurate analysis and comparison."
+    },
+    {
+     "id": 3,
+     "dollars": 7,
+     "justification": "Storing data in MongoDB is necessary for easy retrieval and comparison of data from various vendors."
+    },
+    {
+     "id": 11,
+     "dollars": 6,
+     "justification": "Developing APIs will facilitate the integration of vendor data into our system."
+    },
+    {
+     "id": 9,
+     "dollars": 5,
+     "justification": "Comparing supplier rates for pasta is specific but still important for our pasta needs."
+    },
+    {
+     "id": 8,
+     "dollars": 4,
+     "justification": "Analyzing ingredient costs and optimizing recipes can help reduce expenses and improve product offerings."
+    },
+    {
+     "id": 10,
+     "dollars": 3,
+     "justification": "Calculating the cost of recipes is important for ensuring that our products are competitively priced and profitable."
+    },
+    {
+     "id": 12,
+     "dollars": 2,
+     "justification": "Enhanced analysis will provide more detailed insights for better decision-making, but it's less urgent than the core features."
+    }
+   ],
+   "QA": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "Enabling real-time analysis is crucial for informed decisions and is the backbone of the entire system."
+    },
+    {
+     "id": 4,
+     "dollars": 15,
+     "justification": "A user-friendly interface is essential for easy access and understanding of the data for procurement managers."
+    },
+    {
+     "id": 6,
+     "dollars": 12,
+     "justification": "Supplier comparison is a core feature for identifying the best vendors and streamlining the procurement process."
+    },
+    {
+     "id": 5,
+     "dollars": 10,
+     "justification": "Automated supplier recommendations save time and ensure the best options are always considered."
+    },
+    {
+     "id": 7,
+     "dollars": 8,
+     "justification": "Total cost calculation is necessary for cost optimization and better purchasing decisions."
+    },
+    {
+     "id": 11,
+     "dollars": 6,
+     "justification": "API development will facilitate data integration and improve system flexibility."
+    },
+    {
+     "id": 3,
+     "dollars": 5,
+     "justification": "Data storage in MongoDB is important for efficient data retrieval and comparison."
+    },
+    {
+     "id": 2,
+     "dollars": 4,
+     "justification": "Data translation into a standardized format improves data accuracy for analysis."
+    },
+    {
+     "id": 12,
+     "dollars": 3,
+     "justification": "Enhanced analysis will provide more detailed insights for better decision-making."
+    },
+    {
+     "id": 8,
+     "dollars": 2,
+     "justification": "Ingredient analysis can help optimize recipes and reduce expenses."
+    },
+    {
+     "id": 9,
+     "dollars": 1,
+     "justification": "Pasta supplier rate comparison is a specific use case that can help optimize one aspect of procurement."
+    },
+    {
+     "id": 10,
+     "dollars": 1,
+     "justification": "Recipe cost calculation can help ensure competitively priced and profitable products."
+    }
+   ],
+   "Dev": [
+    {
+     "id": 1,
+     "dollars": 20,
+     "justification": "Enabling real-time analysis is crucial for making informed decisions. The user-friendly interface will allow procurement managers to easily compare and analyze data."
+    },
+    {
+     "id": 4,
+     "dollars": 15,
+     "justification": "Real-time analysis is essential for the platform to be effective. The ability to enable real-time analysis is directly linked to user story 1."
+    },
+    {
+     "id": 5,
+     "dollars": 15,
+     "justification": "Comparing pricing information from various suppliers is a key feature for identifying the best vendors for our needs."
+    },
+    {
+     "id": 6,
+     "dollars": 10,
+     "justification": "Recommending the best suppliers based on the data will help streamline the procurement process."
+    },
+    {
+     "id": 7,
+     "dollars": 10,
+     "justification": "Calculating the total cost of procurement is important for optimizing costs and making better purchasing decisions."
+    },
+    {
+     "id": 11,
+     "dollars": 10,
+     "justification": "Developing APIs for data uploads will allow for easy integration of vendor data into our system."
+    },
+    {
+     "id": 2,
+     "dollars": 8,
+     "justification": "Translating extracted data into a standardized format is important for accurate analysis of vendor data."
+    },
+    {
+     "id": 3,
+     "dollars": 8,
+     "justification": "Storing vendor data in MongoDB is necessary for easily retrieving and comparing data from various vendors."
+    },
+    {
+     "id": 8,
+     "dollars": 7,
+     "justification": "Analyzing ingredient costs and optimizing recipes will help reduce expenses and improve product offerings."
+    },
+    {
+     "id": 9,
+     "dollars": 6,
+     "justification": "Comparing supplier rates for pasta is a specific use case that can help optimize our pasta procurement process."
+    },
+    {
+     "id": 10,
+     "dollars": 6,
+     "justification": "Calculating the cost of recipes is important for ensuring that our products are competitively priced and profitable."
+    },
+    {
+     "id": 12,
+     "dollars": 4,
+     "justification": "Enhanced analysis of vendor data can lead to even more informed decisions about supplier selection and pricing, but it's less critical than the core features."
+    }
+   ]
+  },
+  "manager": [
+   {
+    "id": 1,
+    "rank": 1,
+    "dollars": 20,
+    "justification": "Enabling real-time analysis is crucial for informed decisions and is the backbone of the entire project."
+   },
+   {
+    "id": 4,
+    "rank": 2,
+    "dollars": 15,
+    "justification": "A user-friendly interface is essential for easy access and understanding of the data for procurement managers."
+   },
+   {
+    "id": 6,
+    "rank": 3,
+    "dollars": 14,
+    "justification": "Comparing pricing information from vendors is the primary goal of the project, and it's necessary for identifying the best suppliers."
+   },
+   {
+    "id": 5,
+    "rank": 4,
+    "dollars": 10,
+    "justification": "Receiving recommendations based on vendor data will help streamline the procurement process."
+   },
+   {
+    "id": 7,
+    "rank": 5,
+    "dollars": 9,
+    "justification": "Calculating the total cost of procurement is essential for cost optimization and better purchasing decisions."
+   },
+   {
+    "id": 2,
+    "rank": 6,
+    "dollars": 8,
+    "justification": "Standardizing the data is necessary for accurate analysis and comparison."
+   },
+   {
+    "id": 3,
+    "rank": 7,
+    "dollars": 7,
+    "justification": "Storing data in MongoDB is necessary for easy retrieval and comparison of data from various vendors."
+   },
+   {
+    "id": 11,
+    "rank": 8,
+    "dollars": 6,
+    "justification": "Developing APIs will facilitate the integration of vendor data into our system."
+   },
+   {
+    "id": 9,
+    "rank": 9,
+    "dollars": 5,
+    "justification": "Comparing supplier rates for pasta is specific but still important for our pasta needs."
+   },
+   {
+    "id": 8,
+    "rank": 10,
+    "dollars": 4,
+    "justification": "Analyzing ingredient costs and optimizing recipes can help reduce expenses and improve product offerings."
+   },
+   {
+    "id": 10,
+    "rank": 11,
+    "dollars": 3,
+    "justification": "Calculating the cost of recipes is important for ensuring that our products are competitively priced and profitable."
+   },
+   {
+    "id": 12,
+    "rank": 12,
+    "dollars": 2,
+    "justification": "Enhanced analysis will provide more detailed insights for better decision-making, but it's less urgent than the core features."
+   }
+  ],
+  "dollars": {
+   "1": 19.4,
+   "2": 7.8,
+   "3": 6.8,
+   "4": 14.6,
+   "5": 9.7,
+   "6": 13.6,
+   "7": 8.7,
+   "8": 3.9,
+   "9": 4.9,
+   "10": 2.9,
+   "11": 5.8,
+   "12": 1.9
+  },
+  "rank": {
+   "1": 1,
+   "2": 6,
+   "3": 7,
+   "4": 2,
+   "5": 4,
+   "6": 3,
+   "7": 5,
+   "8": 10,
+   "9": 9,
+   "10": 11,
+   "11": 8,
+   "12": 12
+  },
+  "manager_raw_total": 103.0,
+  "time_s": 81.62
+ }
+}

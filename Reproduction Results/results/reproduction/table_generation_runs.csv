@@ -1,0 +1,7 @@
+model,run,n_stories,response_time_s,similarity,format_ok,invest_all_criteria
+Llama-3.1-8B (paper: GPT-3.5),1,12,16.2,0.5224435329437256,1.0,0.6666666666666666
+Llama-3.1-8B (paper: GPT-3.5),2,11,17.97,0.4526580572128296,1.0,0.8181818181818182
+Llama-3.1-8B (paper: GPT-3.5),3,12,21.54,0.4807080924510956,1.0,0.75
+Mistral-7B (paper: GPT-4o),1,9,41.38,0.4991859793663025,1.0,1.0
+Mistral-7B (paper: GPT-4o),2,9,20.87,0.4709016382694244,1.0,0.2222222222222222
+Mistral-7B (paper: GPT-4o),3,10,30.77,0.4633357524871826,0.0,1.0

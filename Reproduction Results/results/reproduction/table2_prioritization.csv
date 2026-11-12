@@ -1,0 +1,13 @@
+,Story,User story,Llama-3.1-8B Rank,Llama-3.1-8B $100,Mistral-7B Rank,Mistral-7B $100
+1,VendorDataExtraction,"As a data analyst, I want to extract pricing information from PDFs, so that I can compare vendor offerings in a structured format.",2,15.1,1,20.2
+2,VendorDataTranslation,"As a data analyst, I want to translate extracted data into a standardized format for LLM use, so that I can analyze vendor data accurately.",4,10.1,5,8.1
+3,MongoDBDataStorage,"As a data analyst, I want to store vendor data in a MongoDB database, so that I can easily retrieve and compare data from various vendors.",3,12.6,5,8.1
+4,RealTimeAnalysis,"As a procurement manager, I want to enable real-time analysis of vendor data through a user-friendly interface, so that I can make informed decisions about supplier selection and pricing.",1,16.8,2,15.2
+5,SupplierComparison,"As a procurement manager, I want to compare pricing information from various suppliers, so that I can identify the best vendors for our needs.",3,12.6,3,12.1
+6,SupplierRecommendation,"As a procurement manager, I want to receive recommendations for the best suppliers based on vendor data, so that I can streamline our procurement process.",5,8.4,4,10.1
+7,TotalCostCalculation,"As a procurement manager, I want to calculate the total cost of procurement, so that I can optimize our costs and make better purchasing decisions.",6,6.7,4,10.1
+8,IngredientAnalysis,"As a recipe developer, I want to analyze ingredient costs and optimize recipes, so that I can reduce our expenses and improve product offerings.",7,5.0,8,3.0
+9,PastaSupplierRateComparison,"As a procurement manager, I want to compare supplier rates for pasta, so that I can identify the best vendors for our pasta needs.",8,4.2,9,2.0
+10,RecipeCostCalculation,"As a recipe developer, I want to calculate the cost of recipes, so that I can ensure that our products are competitively priced and profitable.",8,4.2,10,1.0
+11,APIDevelopment,"As a data analyst, I want to develop APIs for data uploads, so that we can easily integrate vendor data into our system.",9,3.4,6,6.1
+12,EnhancedAnalysis,"As a procurement manager, I want to enable enhanced analysis of vendor data through a user-friendly interface, so that I can make more informed decisions about supplier selection and pricing.",10,0.8,7,4.0
