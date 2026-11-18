@@ -1,0 +1,627 @@
+{
+ "models": [
+  "llama3.1:8b",
+  "mistral:7b",
+  "qwen2.5:7b"
+ ],
+ "techniques": [
+  "100_dollar",
+  "wsjf",
+  "ahp"
+ ],
+ "scenarios": {
+  "S0_SDMP": "Supplier Data Management Platform",
+  "S1_CWS": "Courseware System",
+  "S2_HOM": "DigitalHome"
+ },
+ "records": 702,
+ "tables": {
+  "hallucination_by_method": [
+   {
+    "method": "B0",
+    "parse_ok": 0.972,
+    "F": 0.007,
+    "Om": 0.044,
+    "Dup": 0.017,
+    "G": 0.056,
+    "H": 0.176,
+    "V": 0.824,
+    "Ug": 0.022,
+    "n_calls": 4.0,
+    "latency_s": 447.01
+   },
+   {
+    "method": "M1",
+    "parse_ok": 1.0,
+    "F": 0.0,
+    "Om": 0.0,
+    "Dup": 0.001,
+    "G": 0.0,
+    "H": 0.016,
+    "V": 0.584,
+    "Ug": 0.032,
+    "n_calls": 1.0,
+    "latency_s": 59.36
+   },
+   {
+    "method": "M2",
+    "parse_ok": 1.0,
+    "F": 0.0,
+    "Om": 0.0,
+    "Dup": 0.001,
+    "G": 0.0,
+    "H": 0.012,
+    "V": 0.576,
+    "Ug": 0.032,
+    "n_calls": 1.584,
+    "latency_s": 94.205
+   }
+  ],
+  "hallucination_by_method_technique": [
+   {
+    "technique": "100_dollar",
+    "method": "B0",
+    "parse_ok": 1.0,
+    "F": 0.002,
+    "Om": 0.017,
+    "Dup": 0.013,
+    "G": 0.028,
+    "H": 0.139,
+    "V": 0.972,
+    "Ug": 0.002
+   },
+   {
+    "technique": "100_dollar",
+    "method": "M1",
+    "parse_ok": 1.0,
+    "F": 0.0,
+    "Om": 0.001,
+    "Dup": 0.001,
+    "G": 0.0,
+    "H": 0.012,
+    "V": 0.864,
+    "Ug": 0.039
+   },
+   {
+    "technique": "100_dollar",
+    "method": "M2",
+    "parse_ok": 1.0,
+    "F": 0.0,
+    "Om": 0.0,
+    "Dup": 0.0,
+    "G": 0.0,
+    "H": 0.0,
+    "V": 0.84,
+    "Ug": 0.039
+   },
+   {
+    "technique": "ahp",
+    "method": "B0",
+    "parse_ok": 0.972,
+    "F": 0.018,
+    "Om": 0.046,
+    "Dup": 0.004,
+    "G": 0.111,
+    "H": 0.167,
+    "V": 0.861,
+    "Ug": null
+   },
+   {
+    "technique": "ahp",
+    "method": "M1",
+    "parse_ok": 1.0,
+    "F": 0.0,
+    "Om": 0.0,
+    "Dup": 0.003,
+    "G": 0.0,
+    "H": 0.037,
+    "V": 0.889,
+    "Ug": null
+   },
+   {
+    "technique": "ahp",
+    "method": "M2",
+    "parse_ok": 1.0,
+    "F": 0.0,
+    "Om": 0.0,
+    "Dup": 0.002,
+    "G": 0.0,
+    "H": 0.037,
+    "V": 0.889,
+    "Ug": null
+   },
+   {
+    "technique": "wsjf",
+    "method": "B0",
+    "parse_ok": 0.944,
+    "F": 0.002,
+    "Om": 0.069,
+    "Dup": 0.034,
+    "G": 0.028,
+    "H": 0.222,
+    "V": 0.639,
+    "Ug": 0.042
+   },
+   {
+    "technique": "wsjf",
+    "method": "M1",
+    "parse_ok": 1.0,
+    "F": 0.0,
+    "Om": 0.0,
+    "Dup": 0.0,
+    "G": 0.0,
+    "H": 0.0,
+    "V": 0.0,
+    "Ug": 0.024
+   },
+   {
+    "technique": "wsjf",
+    "method": "M2",
+    "parse_ok": 1.0,
+    "F": 0.0,
+    "Om": 0.0,
+    "Dup": 0.0,
+    "G": 0.0,
+    "H": 0.0,
+    "V": 0.0,
+    "Ug": 0.024
+   }
+  ],
+  "hallucination_by_method_model": [
+   {
+    "model": "llama3.1:8b",
+    "method": "B0",
+    "H": 0.222,
+    "V": 0.889,
+    "Om": 0.079,
+    "Ug": 0.062
+   },
+   {
+    "model": "llama3.1:8b",
+    "method": "M1",
+    "H": 0.0,
+    "V": 0.543,
+    "Om": 0.0,
+    "Ug": 0.031
+   },
+   {
+    "model": "llama3.1:8b",
+    "method": "M2",
+    "H": 0.0,
+    "V": 0.519,
+    "Om": 0.0,
+    "Ug": 0.031
+   },
+   {
+    "model": "mistral:7b",
+    "method": "B0",
+    "H": 0.167,
+    "V": 0.917,
+    "Om": 0.014,
+    "Ug": 0.0
+   },
+   {
+    "model": "mistral:7b",
+    "method": "M1",
+    "H": 0.037,
+    "V": 0.605,
+    "Om": 0.0,
+    "Ug": 0.005
+   },
+   {
+    "model": "mistral:7b",
+    "method": "M2",
+    "H": 0.037,
+    "V": 0.605,
+    "Om": 0.0,
+    "Ug": 0.005
+   },
+   {
+    "model": "qwen2.5:7b",
+    "method": "B0",
+    "H": 0.139,
+    "V": 0.667,
+    "Om": 0.04,
+    "Ug": 0.007
+   },
+   {
+    "model": "qwen2.5:7b",
+    "method": "M1",
+    "H": 0.012,
+    "V": 0.605,
+    "Om": 0.001,
+    "Ug": 0.059
+   },
+   {
+    "model": "qwen2.5:7b",
+    "method": "M2",
+    "H": 0.0,
+    "V": 0.605,
+    "Om": 0.0,
+    "Ug": 0.059
+   }
+  ],
+  "hallucination_by_scenario": [
+   {
+    "scenario": "S0_SDMP",
+    "method": "B0",
+    "H": 0.222,
+    "V": 0.819,
+    "Om": 0.048
+   },
+   {
+    "scenario": "S0_SDMP",
+    "method": "M1",
+    "H": 0.037,
+    "V": 0.605,
+    "Om": 0.0
+   },
+   {
+    "scenario": "S0_SDMP",
+    "method": "M2",
+    "H": 0.037,
+    "V": 0.593,
+    "Om": 0.0
+   },
+   {
+    "scenario": "S1_CWS",
+    "method": "B0",
+    "H": 0.111,
+    "V": 0.889,
+    "Om": 0.06
+   },
+   {
+    "scenario": "S1_CWS",
+    "method": "M1",
+    "H": 0.012,
+    "V": 0.593,
+    "Om": 0.001
+   },
+   {
+    "scenario": "S1_CWS",
+    "method": "M2",
+    "H": 0.0,
+    "V": 0.58,
+    "Om": 0.0
+   },
+   {
+    "scenario": "S2_HOM",
+    "method": "B0",
+    "H": 0.056,
+    "V": 0.778,
+    "Om": 0.014
+   },
+   {
+    "scenario": "S2_HOM",
+    "method": "M1",
+    "H": 0.0,
+    "V": 0.556,
+    "Om": 0.0
+   },
+   {
+    "scenario": "S2_HOM",
+    "method": "M2",
+    "H": 0.0,
+    "V": 0.556,
+    "Om": 0.0
+   }
+  ],
+  "hallucination_by_condition": [
+   {
+    "condition": "ambiguous",
+    "method": "B0",
+    "H": 0.222,
+    "V": 0.778,
+    "Om": 0.014,
+    "G": 0.0,
+    "Ug": 0.0
+   },
+   {
+    "condition": "ambiguous",
+    "method": "M1",
+    "H": 0.0,
+    "V": 0.611,
+    "Om": 0.0,
+    "G": 0.0,
+    "Ug": 0.0
+   },
+   {
+    "condition": "ambiguous",
+    "method": "M2",
+    "H": 0.0,
+    "V": 0.611,
+    "Om": 0.0,
+    "G": 0.0,
+    "Ug": 0.0
+   },
+   {
+    "condition": "clean",
+    "method": "B0",
+    "H": 0.167,
+    "V": 0.722,
+    "Om": 0.069,
+    "G": 0.0,
+    "Ug": 0.0
+   },
+   {
+    "condition": "clean",
+    "method": "M1",
+    "H": 0.037,
+    "V": 0.593,
+    "Om": 0.0,
+    "G": 0.0,
+    "Ug": 0.019
+   },
+   {
+    "condition": "clean",
+    "method": "M2",
+    "H": 0.037,
+    "V": 0.556,
+    "Om": 0.0,
+    "G": 0.0,
+    "Ug": 0.019
+   },
+   {
+    "condition": "dynamic",
+    "method": "B0",
+    "H": 0.389,
+    "V": 0.889,
+    "Om": 0.01,
+    "G": 0.333,
+    "Ug": 0.023
+   },
+   {
+    "condition": "dynamic",
+    "method": "M1",
+    "H": 0.111,
+    "V": 0.556,
+    "Om": 0.0,
+    "G": 0.0,
+    "Ug": 0.045
+   },
+   {
+    "condition": "dynamic",
+    "method": "M2",
+    "H": 0.111,
+    "V": 0.556,
+    "Om": 0.0,
+    "G": 0.0,
+    "Ug": 0.045
+   },
+   {
+    "condition": "incomplete",
+    "method": "B0",
+    "H": 0.111,
+    "V": 0.889,
+    "Om": 0.097,
+    "G": 0.0,
+    "Ug": 0.0
+   },
+   {
+    "condition": "incomplete",
+    "method": "M1",
+    "H": 0.0,
+    "V": 0.667,
+    "Om": 0.0,
+    "G": 0.0,
+    "Ug": 0.0
+   },
+   {
+    "condition": "incomplete",
+    "method": "M2",
+    "H": 0.0,
+    "V": 0.667,
+    "Om": 0.0,
+    "G": 0.0,
+    "Ug": 0.0
+   }
+  ],
+  "technique_validity": [
+   {
+    "method": "B0",
+    "AHP_CR_median": 0.271,
+    "AHP_CR_ok": 0.222,
+    "AHP_coverage": 0.876,
+    "Dollar_sum_ok": 0.028
+   },
+   {
+    "method": "M1",
+    "AHP_CR_median": 0.266,
+    "AHP_CR_ok": 0.136,
+    "AHP_coverage": 0.997,
+    "Dollar_sum_ok": 0.136
+   },
+   {
+    "method": "M2",
+    "AHP_CR_median": 0.288,
+    "AHP_CR_ok": 0.123,
+    "AHP_coverage": 0.998,
+    "Dollar_sum_ok": 0.16
+   }
+  ],
+  "consistency_clean": [
+   {
+    "technique": "100_dollar",
+    "B0": 0.664,
+    "M1": 0.584,
+    "M2": 0.611
+   },
+   {
+    "technique": "ahp",
+    "B0": 0.449,
+    "M1": 0.511,
+    "M2": 0.52
+   },
+   {
+    "technique": "wsjf",
+    "B0": 0.069,
+    "M1": 0.242,
+    "M2": 0.242
+   }
+  ],
+  "agreement_consensus_clean": [
+   {
+    "technique": "100_dollar",
+    "B0": 0.447,
+    "M1": 0.468,
+    "M2": 0.443,
+    "M3": 0.455
+   },
+   {
+    "technique": "ahp",
+    "B0": 0.599,
+    "M1": 0.593,
+    "M2": 0.595,
+    "M3": 0.715
+   },
+   {
+    "technique": "wsjf",
+    "B0": 0.142,
+    "M1": 0.288,
+    "M2": 0.288,
+    "M3": 0.404
+   }
+  ],
+  "stability_by_condition": [
+   {
+    "condition": "ambiguous",
+    "B0": 0.391,
+    "M1": 0.352,
+    "M2": 0.327,
+    "M3": 0.347
+   },
+   {
+    "condition": "dynamic",
+    "B0": 0.451,
+    "M1": 0.375,
+    "M2": 0.347,
+    "M3": 0.379
+   },
+   {
+    "condition": "incomplete",
+    "B0": 0.462,
+    "M1": 0.396,
+    "M2": 0.395,
+    "M3": 0.415
+   }
+  ],
+  "dynamic": [
+   {
+    "method": "B0",
+    "ghost": 0.333,
+    "urgent_shift": 0.265
+   },
+   {
+    "method": "M1",
+    "ghost": 0.0,
+    "urgent_shift": 0.17
+   },
+   {
+    "method": "M2",
+    "ghost": 0.0,
+    "urgent_shift": 0.188
+   },
+   {
+    "method": "M3",
+    "ghost": null,
+    "urgent_shift": 0.201
+   }
+  ],
+  "cost": [
+   {
+    "method": "B0",
+    "n_calls": 4.0,
+    "latency_s": 447.0
+   },
+   {
+    "method": "M1",
+    "n_calls": 1.0,
+    "latency_s": 59.4
+   },
+   {
+    "method": "M2",
+    "n_calls": 1.6,
+    "latency_s": 94.2
+   },
+   {
+    "method": "M3",
+    "n_calls": 3.6,
+    "latency_s": 212.0
+   }
+  ],
+  "statistics": [
+   {
+    "index": 0,
+    "test": "V: B0 vs M1 (mean 0.824 -> 0.608)",
+    "statistic": 25.0,
+    "p": "0.0013",
+    "n": 54,
+    "p_holm": "0.0081"
+   },
+   {
+    "index": 1,
+    "test": "V: M1 vs M2 (mean 0.582 -> 0.574)",
+    "statistic": 0.0,
+    "p": "0.1797",
+    "n": 108,
+    "p_holm": "0.5391"
+   },
+   {
+    "index": 2,
+    "test": "V: B0 vs M2 (mean 0.824 -> 0.602)",
+    "statistic": 22.0,
+    "p": "< 0.001",
+    "n": 54,
+    "p_holm": "0.0065"
+   },
+   {
+    "index": 3,
+    "test": "H: B0 vs M1 (mean 0.176 -> 0.025)",
+    "statistic": 1.0,
+    "p": "< 0.001",
+    "n": 54,
+    "p_holm": "0.0020"
+   },
+   {
+    "index": 4,
+    "test": "H: M1 vs M2 (mean 0.017 -> 0.012)",
+    "statistic": 0.0,
+    "p": "0.3173",
+    "n": 108,
+    "p_holm": "0.6346"
+   },
+   {
+    "index": 5,
+    "test": "H: B0 vs M2 (mean 0.176 -> 0.025)",
+    "statistic": 1.0,
+    "p": "< 0.001",
+    "n": 54,
+    "p_holm": "0.0020"
+   },
+   {
+    "index": 6,
+    "test": "Om: B0 vs M1 (mean 0.044 -> 0.000)",
+    "statistic": 0.0,
+    "p": "0.0021",
+    "n": 54,
+    "p_holm": "0.0104"
+   },
+   {
+    "index": 7,
+    "test": "Om: M1 vs M2 (mean 0.000 -> 0.000)",
+    "statistic": 0.0,
+    "p": "0.3173",
+    "n": 108,
+    "p_holm": "0.6346"
+   },
+   {
+    "index": 8,
+    "test": "Om: B0 vs M2 (mean 0.044 -> 0.000)",
+    "statistic": 0.0,
+    "p": "0.0021",
+    "n": 54,
+    "p_holm": "0.0104"
+   }
+  ]
+ }
+}

@@ -1,0 +1,4 @@
+method,AHP_CR_median,AHP_CR_ok,AHP_coverage,Dollar_sum_ok
+B0,0.271,0.222,0.876,0.028
+M1,0.266,0.136,0.997,0.136
+M2,0.288,0.123,0.998,0.16
